@@ -31,7 +31,7 @@ header {
     margin-bottom: 30px;
 }
 
-footer  {
+/* footer  {
     width: 100%;
     height: 30px;
     bottom: 0;
@@ -49,6 +49,13 @@ footer  {
     line-height: 100%;
     margin-top: 100px;
     
+} */
+footer{
+    font-family: Teko;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin-top: 100px;
 }
 
 
@@ -81,5 +88,34 @@ footer  {
     text-align: justify;
 }
 
-/* ~~~~~~~關於大夫 CSS ~~~~~~~~~ */
+/* ~~~~~~~魚類圖鑑 ~~~~~~~~~ */
+.darklayer{
+    display: none;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.5s; 
+    z-index: 0  ;
+    
+}
 
+.fishList{
+    display: none;
+    background-color: transparent;
+    position: fixed;
+    height: 80%;
+    width: 80%;
+    top: 45px;
+    left: 10%;
+    /* border-radius: ; */
+    
+    background-color: black;
+}
+
+.fish_title{
+    text-align: center;
+    font-size: 25px;
+}
