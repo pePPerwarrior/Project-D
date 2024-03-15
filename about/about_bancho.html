@@ -7,29 +7,32 @@
     <meta name="viewport"
         content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0">
 
-    <title>Divers Diary</title>
+    <title>About Bancho</title>
     <!-- Bootsrap -->
-    <link rel="stylesheet" href="./_css/bootstrap.css">
-    <script src="./_js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
     <!--css-->
-    <link rel="stylesheet" href="./index_style.css">
+    <link rel="stylesheet" href="../style.css">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    
 
-    <!-- 背景影片 -->
-    <div id="wrap">
-        <!-- head with nav bar -->
-    <header id="index_head">
+
+
+
+    <!-- head with nav bar -->
+
+    <header class="header">
         <div class="container bg-transparent">
 
             <nav class="navbar navbar-expand-lg bg-transparent">
                 <div class="container-fluid">
-                    <a class="navbar-brand logo-diver" href="project_d.html" ></a>
+                    <a class="navbar-brand logo-diver" href="../project_d.html"></a>
                     <!-- NavBar 按鈕 -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,19 +52,19 @@
                                     關於我們
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" id="dropdown-item-1" href="./about/about_dave.html">關於戴夫</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="./about/about_bancho.html">班喬壽司</a></li>
+                                    <li><a class="dropdown-item" id="dropdown-item-1" href="#">關於戴夫</a></li>
+                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">班喬壽司</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="./about/sponsors.html">贊助我們</a></li>
+                                    <li><a class="dropdown-item" href="#">贊助我們</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
 
                     <!-- bar 2 starts here -->
-                    
+
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             <li class="nav-item dropdown">
@@ -71,17 +74,19 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" id="dropdown-item-1" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">Another action</a>
+                                    </li>
                                     <li><a class="dropdown-item" id="dropdown-item-1" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-1" href="#">Action</a></li>   
+                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">Another action</a>
+                                    </li>
+                                    <li><a class="dropdown-item" id="dropdown-item-1" href="#">Action</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
 
                     <!-- bar 3 starts here -->
-                    
+
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             <li class="nav-item dropdown">
@@ -91,7 +96,8 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" id="dropdown-item-1" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">Another action</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -102,7 +108,7 @@
                     </div>
 
                     <!-- bar 4 starts here -->
-                    
+
                     <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             <li class="nav-item dropdown">
@@ -125,36 +131,30 @@
             </nav>
         </div>
     </header>
-        
-        <main>
-            
-            <div class="video">
-                <video autoplay="" loop="" muted="" playsinline="">
-                    <source src="./images/bg and bar/DaveTheDiverBgVideo.mp4" type="video/mp4">
-                </video>
-            </div>
-            <button onclick="phonebutton()" class="phonebutton" ><i class="fa-solid fa-phone"></i></button>
-            <div class="phone-container" id="phone">
-                <div class="phone-screen">
+    <!-- 墊高 -->
 
-                </div>
-            </div>
-            
-        </main>
-    <footer id="footer_head">
+    <div class="container">
+        <img src="../images/about/Bancho avatar.jpg" style="display: block;margin: auto;width: 50%;">
+        <p style="opacity: 65%; background-color: white; margin-top: 30px;">
+            嘿，各位壽司愛好者！我是班喬，您的專業壽司師傅！
+            <br><br>
+            從我踏入這個職業的第一天起，我就知道自己要成為一名出色的壽司師傅。我投入了無數的時間和努力來精進自己的技藝，不斷地學習和實踐，追求完美的壽司藝術。
+            <br><br>
+            對我來說，壽司不僅僅是一道美味的食物，更是一門藝術。每一個握壽司的動作，都是我對食材的尊重和對食客的熱情的表現。我注重每一個細節，追求食材的新鮮和品質，並將它們融合在一起，創造出最完美的口感和味道。
+            <br><br>
+            我的壽司不僅味道鮮美，更注重視覺和觸覺的享受。我喜歡在創作中展現創意，通過不同的食材搭配和造型設計，讓每一個壽司都成為一件藝術品，給食客帶來視覺和味覺的雙重享受。
+            <br><br>
+            作為一流的壽司師傅，我不僅擁有精湛的技術，還擁有敏銳的味覺和對食材的深刻理解。我將我的熱情和專業帶到每一個壽司之中，讓每一位食客都能感受到我的用心和對壽司的熱愛。
+            <br><br>
+            如果您對壽司有興趣，歡迎來到我的壽司店，讓我用我的手藝為您帶來一場美味和驚喜的壽司饗宴！
+        </p>
+    </div>
+    <footer class="footer">
         <p style="background-color: transparent;">© This website is only for practice , dont sue me pls :( ©</p>
     </footer>
     </div>
-    
-<script>
-    // phone appear button
-    var phoneButt = document.getElementById("phone");
-    function phonebutton(){
-        phoneButt.style.display = "flex";
-        
-    }
-   
-</script>
+
+
 </body>
 
 </html>
