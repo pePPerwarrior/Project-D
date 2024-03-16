@@ -14,25 +14,18 @@
     <script src="../_js/bootstrap.bundle.js"></script>
     <!--css-->
     <link rel="stylesheet" href="../style.css">
-    
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <style>
-            div[class^="col"] {
-                border: 2px solid black;
-            }
+    <style>
+        /* .col-4{border: 1px solid black;} */
+    </style>
     
-        </style>
 </head>
 
-<body >
-
-
-
-
+<body>
     <!-- head with nav bar -->
 
     <header class="header">
@@ -139,61 +132,74 @@
             </nav>
         </div>
     </header>
-    
 
-    <div class="container"  > 
-        <div class="form-floating">
-            <div class="row">
-            <div class="col-3"  >1234567</div>
-            <div class="col-3">2</div>
-            <div class="col-3">3</div>
-            <div class="col-3">4</div>
-            <div class="col-3">5</div>
-            <div class="col-3">6</div>
-            <div class="col-3">7</div>
-            <div class="col-3">8</div>
-            <div class="col-3">9</div>
-            <div class="col-3">10</div>
-            <div class="col-3">11</div>
-            <div class="col-3">12</div>
+
+    <div class="container" >
+        <div style="background-color: rgb(248, 249, 250, 0.7);">
+            <div class="row" style="padding-left: 10px;padding-right:10px ;">
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/河豚.jpg" id="pufferFish" class="fish_trigger" ><p>河豚</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/石斑魚.jpg" id="grouper" class="fish_trigger"><p>石斑魚</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
             </div>
-            <button onclick="dark()">1234</button>
+            
             
         </div>
-        
-        
+
     </div>
     <!-- 暗層 -->
-    
+
     <div class="darklayer" id="darklayer"></div>
-    <div class="fishList ">
-        
-        <div class="col-6 row " >
-            <div class="col-12" style="min-height: 350px;" >
-               <img src="" alt="">
+
+    <!-- 魚的清單 浮動 -->
+    <div class="fishList">
+        <div class="col-6">
+            <div class="col-12" style="height: 50%; text-align: center;padding-top: 5rem;">
+                <figure class="figure">
+                    <img src="" class="img-fluid figure-img" id="fish_image_change">
+                    
+                </figure>
+                <!-- <img src="../石斑魚.jpg" class="img-fluid"> -->
             </div>
-            <div class="col-12 ">
-                <br><br><br>
-                <p id="fish_name" class="fish_title">名稱:</p>
-                <p id="fish_weight" class="fish_title">體重:</p>
-                <p id="fish_area" class="fish_title">出沒地:</p>
-            </div>  
+            <div class="col-12" style="height: 50%; padding: 5.5em 7em;">
+                <ul class="fish_title">
+                    <li id="fish_name">名稱&nbsp;:&nbsp;</li>
+                    <li id="fish_weight">體重&nbsp;:&nbsp;</li>
+                    <li id="fish_area">出沒地&nbsp;:&nbsp;</li>
+                </ul>
+            </div>
+
         </div>
-        <div class="col-6 row" >
-            <div class="col-12"></div>
-            <div class="col-12"></div>
+        <div class="col-6">
+            <div class="col-12" style="height: 50%;padding: 10em 5em;">
+                <p id="fish_info"></p>
+            </div>
+            <div class="col-12" style="height: 50%; text-align: center;padding-top: 5rem;">
+                <figure class="figure">
+                    <img src="../images/fish/河豚.jpg" class="img-fluid figure-img" id="fish_image_change">
+                    
+                </figure>
+                <!-- 魚呈現深紅褐色，上面帶有不規則的黃或銀色斑點，身長約90公分。吻部寬大，下顎突出，棲身於水深不及300公尺的海底暗礁周圍。  -->
+            </div>
+
         </div>
     </div>
-    
-    
+
+
+    <!-- FFFFFFOOOOOOOOOOOOTTTTTTTTTTTTTEEEEEEEEERRRRRRRRRRRRRRRR -->
     <footer class="footer">
         <p style="background-color: transparent;">© This website is only for practice , dont sue me pls :( ©</p>
     </footer>
-    </div>
-    <!-- js -->
+    <!-- @@@@@@@@@@@@@@@@JSJSJSJSJSJ@@@@@@@@@@@@@@@@@ -->
     <script src="./fish.js"></script>
-   
-
 </body>
 
 </html>

@@ -8,6 +8,9 @@
 
 body {
     background-image: url(images/dave\ wallpaper.webp);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
 }
 
 html,
@@ -105,17 +108,40 @@ footer{
 .fishList{
     display: none;
     background-color: transparent;
-    position: fixed;
-    height: 80%;
-    width: 80%;
+    position: absolute;
+    height: 50rem;
+    width: 80rem;
     top: 45px;
-    left: 10%;
+    left: 18%;
     /* border-radius: ; */
-    
-    background-color: black;
+    /* padding-top: 2rem;
+    padding-left: 1rem; */
+    /* background-color: transparent; */
+    flex-direction: row;
 }
 
 .fish_title{
-    text-align: center;
-    font-size: 25px;
+    list-style: none;
+    line-height: 2em;
+    font-size: 40px;
+    letter-spacing: 3px;
+    
+}
+.fish_grids{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+/* .fish_image{
+   min-height: 350px;
+} */
+
+.fish_block{
+    height: 400px;
+}
+
+#fish_info{
+    font-size: 30px ;
+    text-align: justify;
 }
