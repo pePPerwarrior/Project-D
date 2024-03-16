@@ -37,10 +37,7 @@ var fishes = {
 const darklayer = document.querySelector('.darklayer');
 const fishlist = document.querySelector('.fishList');
 
-
 const fishTriggers = document.querySelectorAll('.fish_trigger');
-
-
 
 fishTriggers.forEach(function(fishTriggers){
     fishTriggers.addEventListener('click', function () {
@@ -50,14 +47,42 @@ fishTriggers.forEach(function(fishTriggers){
         fishlist.style.display = "flex";
     });
 })
-
+// 關閉魚選單
 function shut(){
-    location.reload();
-    // darklayer.style.display = "none";
-    // fishlist.style.display = "none";
+    // location.reload();
+    darklayer.style.display = "none";
+    fishlist.style.display = "none";
 }
 
+// 所有魚的同時觸發
 
+document.getElementById("pufferFish").addEventListener('click', printFishData);
+document.getElementById("whiteShrimp").addEventListener('click', printFishData);
+document.getElementById("grouper").addEventListener('click', printFishData);
+document.getElementById("oToro").addEventListener('click', printFishData);  
+document.getElementById("moneyFish").addEventListener('click', printFishData);
+document.getElementById("blueFish").addEventListener('click', printFishData);
+document.getElementById("swordFish").addEventListener('click', printFishData);
+document.getElementById("euroLob").addEventListener('click', printFishData);
+document.getElementById("yellowFish").addEventListener('click', printFishData);
+document.getElementById("comeFish").addEventListener('click', printFishData);
+document.getElementById("gunSquid").addEventListener('click', printFishData);
+// document.getElementById("starFish").addEventListener('click', printFishData);
+document.getElementById("redFish").addEventListener('click', printFishData);
+
+
+
+
+
+
+function printFishData(event) {
+    const fishid = event.target.id;
+    const fishdata = fishes[fishid];
+    document.getElementById("fish_name").innerHTML = "名稱&nbsp;:&nbsp;"+fishdata[0];
+    document.getElementById("fish_weight").innerHTML = "體重&nbsp;:&nbsp;"+fishdata[1];
+    document.getElementById("fish_area").innerHTML = "出沒地&nbsp;:&nbsp;"+fishdata[2];
+    
+}
 
 // OG 獨立版增加監視器
 ////////////////////////////////////////////////////////////////////////
@@ -68,27 +93,8 @@ function shut(){
 //     fishlist.style.backgroundColor = 'rgb(245, 245, 220,0.8)';
 //     fishlist.style.display = "flex";
 // });
-///////////////////////////////////////////////////////////////////////////
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////
-
-
-
-//////////////////////////////////////////////////////////////////////////////
 
 /////////////////////// 河豚  pufferFish///////////////////////////////////////
-document.getElementById("pufferFish").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML = fishdata[0];
-    document.getElementById("fish_weight").innerHTML = fishdata[1];
-    document.getElementById("fish_area").innerHTML = fishdata[2];
-    
-}
 
 document.getElementById("pufferFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -99,20 +105,7 @@ document.getElementById("pufferFish").addEventListener('click', function(){
     z.src = "../images/food/河豚_食物.jpg";
 });
 
-
-
-
-
 /////////////////////// 石斑魚  grouper///////////////////////////////////////
-document.getElementById("grouper").addEventListener('click', printFishData);
-function printFishData(event) { 
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-   
-}
 
 document.getElementById("grouper").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -123,23 +116,7 @@ document.getElementById("grouper").addEventListener('click', function(){
     z.src = "../images/food/石斑魚_食物.jpg";
 });
 
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////鮪魚////////////////////////////////////////////
-
-document.getElementById("oToro").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
 
 document.getElementById("oToro").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -150,24 +127,7 @@ document.getElementById("oToro").addEventListener('click', function(){
     z.src = "../images/food/鮪魚_食物.jpg";
 });
 
-
-
-
 /////////////////////////////////////////鰻魚///////////////////////////////////////////
-/////////////////////////////////////////鰻魚///////////////////////////////////////////
-/////////////////////////////////////////鰻魚///////////////////////////////////////////
-/////////////////////////////////////////鰻魚///////////////////////////////////////////
-/////////////////////////////////////////鰻魚///////////////////////////////////////////
-
-document.getElementById("moneyFish").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
 
 document.getElementById("moneyFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -178,22 +138,7 @@ document.getElementById("moneyFish").addEventListener('click', function(){
     z.src = "../images/food/鰻魚_食物.jpg";
 });
 
-
 ///////////////////////////////////////鯖魚///////////////////////////////////////////
-///////////////////////////////////////鯖魚///////////////////////////////////////////
-///////////////////////////////////////鯖魚///////////////////////////////////////////
-///////////////////////////////////////鯖魚///////////////////////////////////////////
-///////////////////////////////////////鯖魚///////////////////////////////////////////
-
-document.getElementById("blueFish").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
 
 document.getElementById("blueFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -204,18 +149,7 @@ document.getElementById("blueFish").addEventListener('click', function(){
     z.src = "../images/food/鯖魚_食物.jpg";
 });
 
-
 //////////////////////////////////////旗魚///////////////////////////////////////////////
-
-document.getElementById("swordFish").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
 
 document.getElementById("swordFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -226,18 +160,7 @@ document.getElementById("swordFish").addEventListener('click', function(){
     z.src = "../images/food/旗魚_食物.jpg";
 });
 
-
 ////////////////////////歐洲螯龍蝦/////////////////////////////////
-
-document.getElementById("euroLob").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
 
 document.getElementById("euroLob").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -248,18 +171,7 @@ document.getElementById("euroLob").addEventListener('click', function(){
     z.src = "../images/food/歐洲螯龍蝦_食物.jpg";
 });
 
-
 //////////////////////////////////////褐擬鱗魨///////////////////////////////////////////
-
-document.getElementById("yellowFish").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
 
 document.getElementById("yellowFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -270,18 +182,7 @@ document.getElementById("yellowFish").addEventListener('click', function(){
     z.src = "../images/food/黃魚_食物.jpg";
 });
 
-
 ////////////////////////////////////康馬氏加椿//////////////////////////////////////////////
-
-document.getElementById("comeFish").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
 
 document.getElementById("comeFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -292,18 +193,9 @@ document.getElementById("comeFish").addEventListener('click', function(){
     z.src = "../images/food/康馬氏_食物.jpg";
 });
 
-
 ////////////////////////////////////青瞻星魚///////////////////////////////////////////
 
-// document.getElementById("starFish").addEventListener('click', printFishData);
-// function printFishData(event) {
-//     const fishid = event.target.id;
-//     const fishdata = fishes[fishid];
-//     document.getElementById("fish_name").innerHTML += fishdata[0];
-//     document.getElementById("fish_weight").innerHTML += fishdata[1];
-//     document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-// }
+
 
 // document.getElementById("starFish").addEventListener('click', function(){
 //     const x = document.getElementById("fish_image_change");
@@ -317,16 +209,6 @@ document.getElementById("comeFish").addEventListener('click', function(){
 
 ////////////////////////////////////長槍烏賊//////////////////////////////////////////////
 
-document.getElementById("gunSquid").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
-
 document.getElementById("gunSquid").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
     x.src = "../images/fish/長槍烏賊.jpg";
@@ -338,17 +220,6 @@ document.getElementById("gunSquid").addEventListener('click', function(){
 
 ////////////////////////////////////花班刺鰓鮨///////////////////////////////////
 
-
-document.getElementById("redFish").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
-
 document.getElementById("redFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
     x.src = "../images/fish/花班刺.jpg";
@@ -358,18 +229,7 @@ document.getElementById("redFish").addEventListener('click', function(){
     z.src = "../images/food/花班刺_食物.jpg";
 });
 
-///////////////////////////////////////////////////////////////////////////////////////
-
-
-document.getElementById("whiteShrimp").addEventListener('click', printFishData);
-function printFishData(event) {
-    const fishid = event.target.id;
-    const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML += fishdata[0];
-    document.getElementById("fish_weight").innerHTML += fishdata[1];
-    document.getElementById("fish_area").innerHTML += fishdata[2];
-    
-}
+////////////////////////////////////////白虎蝦///////////////////////////////////////////////
 
 document.getElementById("whiteShrimp").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
@@ -383,11 +243,7 @@ document.getElementById("whiteShrimp").addEventListener('click', function(){
 ///////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////
+
 
 // document.getElementById("pufferFish").addEventListener('click', printFishData);
 // function printFishData(event) {
