@@ -139,16 +139,17 @@
             <div class="row" style="padding-left: 10px;padding-right:10px ;">
                 <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/河豚.jpg" id="pufferFish" class="fish_trigger" ><p>河豚</p></div>
                 <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/石斑魚.jpg" id="grouper" class="fish_trigger"><p>石斑魚</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
-                <div class="col-4 fish_grids flex-column pt-4"><img src="" id="" class="fish_trigger"><p>f</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/鮪魚.jpg" id="oToro" class="fish_trigger"><p>鮪魚</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/鰻魚.jpg" id="moneyFish" class="fish_trigger"><p>錢鰻</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/鯖魚.jpg" id="blueFish" class="fish_trigger"><p>大西洋鯖魚</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/旗魚.jpg" id="swordFish" class="fish_trigger"><p>平鰭旗魚</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/歐洲螯龍蝦.jpg" id="euroLob" class="fish_trigger"><p>歐洲螯龍蝦</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/黃魚.jpg" id="yellowFish" class="fish_trigger"><p>褐擬鱗魨</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/康馬氏.jpg" id="comeFish" class="fish_trigger"><p>康馬氏加椿</p></div>
+                <!-- <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/青瞻星魚.jpg" id="starFish" class="fish_trigger"><p>青瞻星魚</p></div> -->
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/長槍烏賊.jpg" id="gunSquid" class="fish_trigger"><p>長槍烏賊</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/花班刺.jpg" id="redFish" class="fish_trigger"><p>花斑刺鰓鮨</p></div>
+                <div class="col-4 fish_grids flex-column pt-4"><img src="../images/fish/白虎蝦.jpg" id="whiteShrimp" class="fish_trigger"><p>白虎蝦</p></div>
             </div>
             
             
@@ -156,8 +157,9 @@
 
     </div>
     <!-- 暗層 -->
-
-    <div class="darklayer" id="darklayer"></div>
+    <div class="darklayer" id="darklayer">
+        <button id="close_trigger" onclick="shut()"><i class="fa-sharp fa-regular fa-x"></i></button>
+    </div>
 
     <!-- 魚的清單 浮動 -->
     <div class="fishList">
@@ -175,17 +177,20 @@
                     <li id="fish_weight">體重&nbsp;:&nbsp;</li>
                     <li id="fish_area">出沒地&nbsp;:&nbsp;</li>
                 </ul>
+                
             </div>
 
         </div>
         <div class="col-6">
+            <!-- 魚的描述 -->
             <div class="col-12" style="height: 50%;padding: 10em 5em;">
                 <p id="fish_info"></p>
             </div>
+            <!-- 食物 -->
             <div class="col-12" style="height: 50%; text-align: center;padding-top: 5rem;">
+                <h1 style="padding-bottom:1em ;">食物</h1>
                 <figure class="figure">
-                    <img src="../images/fish/河豚.jpg" class="img-fluid figure-img" id="fish_image_change">
-                    
+                    <img src="" class="img-fluid figure-img" id="food_image_change">    
                 </figure>
                 <!-- 魚呈現深紅褐色，上面帶有不規則的黃或銀色斑點，身長約90公分。吻部寬大，下顎突出，棲身於水深不及300公尺的海底暗礁周圍。  -->
             </div>
