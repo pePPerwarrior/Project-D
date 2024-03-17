@@ -109,8 +109,9 @@ main .video {
 
 
 .navbar a {
-    color: rgb(237, 229, 8) !important;
+    color: rgb(255, 208, 45) !important;
     font-size: 30px !important;
+    font-weight: bolder;
 
 }
 

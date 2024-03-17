@@ -67,8 +67,8 @@ document.getElementById("euroLob").addEventListener('click', printFishData);
 document.getElementById("yellowFish").addEventListener('click', printFishData);
 document.getElementById("comeFish").addEventListener('click', printFishData);
 document.getElementById("gunSquid").addEventListener('click', printFishData);
-// document.getElementById("starFish").addEventListener('click', printFishData);
 document.getElementById("redFish").addEventListener('click', printFishData);
+// document.getElementById("starFish").addEventListener('click', printFishData);
 
 
 
