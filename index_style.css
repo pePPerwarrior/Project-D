@@ -132,17 +132,23 @@ main .video {
     
 }
 
-/* phone css */
-.phone-container{display: none;}
-.phone-container{
+/*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
+/*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
+/*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
+/*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
+/*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
+
+.phone-container{display: flex;}
+/* .phone-container{
     position: absolute; 
     left: 6rem; 
     bottom:3rem; 
     font-size: 60px;
     background-color: yellow;
     padding: 16rem 9rem;
-    border-radius: 7.5%;
-    /* box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%); */
+    border-radius: 30px;
+    display: none;
+    box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
 }
 .phone-screen{
     position: absolute; 
@@ -151,10 +157,51 @@ main .video {
     font-size: 60px;
     background-color: black;
     padding: 15.2rem 8.5rem;
-    border-radius: 8%;
+    border-radius: 30px;
 }
 
-.phonebutton{
+.appbutton{
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+  } */
+
+  .phone-container{
+    position: absolute; 
+    left: 100px; 
+    bottom:70px; 
+    font-size: 60px;
+    background-color: yellow;
+    padding: 300px 170px;
+    border-radius: 30px;
+    /* display: none; */
+    box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
+}
+.phone-screen{
+    position: absolute; 
+    left: 10px; 
+    bottom:18px; 
+    font-size: 60px;
+    background-color: black;
+    padding: 280px 160px;
+    border-radius: 30px;
+}
+
+.appbutton{
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    left: 25px;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+.phonetrigger{
     position: absolute;
     font-size: 80px;
     background-color: transparent;
@@ -166,9 +213,17 @@ main .video {
     padding: 0px 20px;
 }
 
+
+
 /* .phone {
     box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
 } */
+
+
+
+
+
+
 
 
 
