@@ -135,12 +135,11 @@ main .video {
 }
 .phone-screen{
     position: relative; 
-    /* left: 10px; 
-    top:16px;  */
+    
     margin: 18px 10px;
     font-size: 60px;
     background-image: url(images/dave\ wallpaper.webp);background-size: cover;
-    /* padding: 280px 160px; */
+    
     width: 320px;
     height: 560px;
     border-radius: 30px;
@@ -306,7 +305,8 @@ main .video {
 .bg-phone-sc{
     width: 1200px;
     height: 100%;
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    background-image: url(images/dave\ wallpaper.webp);background-size: cover;
     position: absolute;
     top: 50px;
     left:45px;
