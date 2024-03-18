@@ -4,6 +4,7 @@
 //     weight: ["3KG", "4KG", "6KG","8KG"],
 //     place: ["0~50m", "50~130m"]
 // }
+
 var fishes = {
     grouper: ["石斑魚", "8KG", "50~130m"],
     pufferFish: ["河豚", "3KG", "0~50m"],
@@ -193,18 +194,7 @@ document.getElementById("comeFish").addEventListener('click', function(){
     z.src = "../images/food/康馬氏_食物.jpg";
 });
 
-////////////////////////////////////青瞻星魚///////////////////////////////////////////
 
-
-
-// document.getElementById("starFish").addEventListener('click', function(){
-//     const x = document.getElementById("fish_image_change");
-//     x.src = "../images/fish/青瞻星魚.jpg";
-//     const y = document.getElementById("fish_info");
-//     y.innerHTML = "眼睛和吻部都大，頭部變平，魚身越靠近尾部越窄，身長約35公分。隱藏在沙子或泥土中，狩獵蝦、螃蟹和其他魚等。";
-//     const z = document.getElementById("food_image_change");
-//     z.src = "../images/food/青瞻星魚_食物.jpg";
-// });
 
 
 ////////////////////////////////////長槍烏賊//////////////////////////////////////////////

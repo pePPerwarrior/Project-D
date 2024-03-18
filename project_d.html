@@ -140,7 +140,7 @@
                 <div class="phone-screen">
                     <div id="phone_top_bar"></div>
                     
-                    <div class="appbutton" id="no1"><a href="https://www.google.com.tw/?hl=zh_TW"><div><i class="fa-solid fa-phone" ></i></div></a></div>
+                    <div class="appbutton" id="no1"><div><i class="fa-solid fa-fish"></i></div></div>
                     <p id="po1">123</p>
                     <div class="appbutton" id="twitter_app"><a href="https://twitter.com/DaveDiverGame" target="_blank"><div><i class="fa-brands fa-x-twitter"></i></div></a></div>
                     <p id="twitter_name">Twitter</p>
@@ -152,25 +152,112 @@
                     <p id="nintendo_name">Website</p>
                     <div class="appbutton" id="discord_app"><a href="https://discord.com/invite/davethediver" target="_blank"><div id="fixed_dc"><i class="fa-brands fa-discord"></i></div></a></div>
                     <p id="discord_name">Discord</p>
-                    <div class="appbutton" id="no7"><a href="https://www.google.com.tw/?hl=zh_TW"><div><i class="fa-solid fa-phone" ></i></div></a></div>
-                    <p id="po7">123</p>
-                    <div class="appbutton" id="no8"><a href="https://www.google.com.tw/?hl=zh_TW"><div><i class="fa-solid fa-phone" ></i></div></a></div>
-                    <p id="po8">123</p>
-                    <div class="appbutton" id="no9"><a href="https://www.google.com.tw/?hl=zh_TW"><div><i class="fa-solid fa-phone" ></i></div></a></div>
-                    <p id="po9">123</p>
+                    <div class="appbutton" id="fish_app_01_icon" ><div  onclick="fish_app_01_trigger()" id="fixed_fish01"><i class="fa-solid fa-fish"></i></div></div>
+                    <p id="fish_app_01_icon_name">淺海區</p>
+                    <div class="appbutton" id="no8"><div  onclick="fish_app_02_trigger()" id="fixed_fish02"><i class="fa-solid fa-fish"></i></div></div>
+                    <p id="po8">深海區</p>
+                    <div class="appbutton" id="no9"><div onclick="fish_app_03_trigger()" id="fixed_fish02"><i class="fa-solid fa-fish"></i></div></div>
+                    <p id="po9">冰原區</p>
                 </div>
             </div>
-<!-- bg screen  bg screen  bg screen  bg screen  bg screen  bg screen  bg screen  bg screen -->
-            <div class="bg-phone-sc-container" id="bg_phone-sc">
-                <button id="close_trigger" onclick="bg_phone_trigger_shut()"><i class="fa-sharp fa-regular fa-x"></i></button>
+        <!-- bg screen  bg screen  bg screen  bg screen  bg screen  bg screen  bg screen  bg screen -->
+            <div class="bg-phone-sc-container" id="bg-phone-sc">
+                <button id="close_trigger_2" onclick="bg_phone_trigger_shut()"><i class="fa-sharp fa-regular fa-x"></i></button>
 
                 <div class="bg-phone">
                     <div class="bg-phone-sc">
+                        <!-- 時間bar -->
                         <div id="bg-phone_top_bar"></div>
-                    </div>
-                </div>
-            </div>
-        </main>
+
+                        <!-- 魚01選單 -->
+                        <div class="container" id="fish_app_01" >       <!--style="display: none;" -->
+                            <div class="row" style="margin-top: 100px;" >                            
+                                <div class="col-6 "><img src="../images/fish/河豚.jpg" id="pufferFish" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/石斑魚.jpg" id="grouper" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/鮪魚.jpg" id="oToro" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/鰻魚.jpg" id="moneyFish" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/鯖魚.jpg" id="blueFish" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/旗魚.jpg" id="swordFish" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/歐洲螯龍蝦.jpg" id="euroLob" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/黃魚.jpg" id="yellowFish" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/康馬氏.jpg" id="comeFish" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/長槍烏賊.jpg" id="gunSquid" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/花班刺.jpg" id="redFish" class="fish_app_list01"></div>
+                                <div class="col-6 "><img src="../images/fish/白虎蝦.jpg" id="whiteShrimp" class="fish_app_list01"></div>
+                            </div>  
+                        </div>
+
+                        <!-- 魚02選單 -->   
+                        <div class="container" id="fish_app_02">
+                                <div class="row" style="margin-top: 100px;">              
+                                    <div class="col-6"><img src="../images/fish/青瞻星魚.jpg" id="starFish" class="fish_app_list02"></div>
+                                    <div class="col-6"><img src="../images/fish/十指金眼鯛.jpg" id="tenFingers" class="fish_app_list02"></div>
+                                    <div class="col-6"><img src="../images/fish/三齒.jpg" id="threeTeeth" class="fish_app_list02"></div>
+                                    <div class="col-6"><img src="../images/fish/挪威海螯蝦.jpg" id="norwayLobs" class="fish_app_list02"></div>
+                                    <div class="col-6"><img src="../images/fish/雪茄達摩鯊.jpg" id="damoFish" class="fish_app_list02"></div>
+                                    <div class="col-6"><img src="../images/fish/單棘.jpg" id="singleFish" class="fish_app_list02"></div>
+                                </div>                            
+                        </div>
+                        <!-- 魚03選單 --> 
+                        <div class="container" id="fish_app_03" >
+                                <div class="row" style="margin-top: 100px;">              
+                                    <div class="col-6"><img src="../images/fish/南極獅子魚.jpg" id="lionFish" class="fish_app_list03"></div>
+                                    <div class="col-6"><img src="../images/fish/小飛象章魚.jpg" id="elephantOct" class="fish_app_list03"></div>
+                                    <div class="col-6"><img src="../images/fish/軟銀棘杜父魚.jpg" id="uglyFish" class="fish_app_list03"></div>
+                                    <div class="col-6"><img src="../images/fish/金色帝王蟹.jpg" id="kingCrab" class="fish_app_list03"></div>
+                                    <div class="col-6"><img src="../images/fish/黑線鱈.jpg" id="snowFish" class="fish_app_list03"></div>
+                                </div>
+                        </div>
+
+                         <!-- 暗層 -->
+                        <div class="darklayer" id="darklayer">
+                            <!-- <button id="close_trigger" onclick="shut()"><i class="fa-sharp fa-regular fa-x"></i></button> -->
+                        </div>
+
+                        <!-- 魚的清單 浮動 -->
+                        <div class="fishList">
+                            <button id="close_trigger" onclick="shut()"><i class="fa-sharp fa-regular fa-x"></i></button>
+                            <div class="col-6">
+                                <div class="col-12" style="height: 50%; text-align: center;padding-top: 5rem;">
+                                    <figure class="figure">
+                                        <img src="" class="img-fluid figure-img" id="fish_image_change">
+                                        
+                                    </figure>
+                                    <!-- <img src="../石斑魚.jpg" class="img-fluid"> -->
+                                </div>
+                                <div class="col-12" style="height: 50%; padding: 5.5em 6em;">
+                                    <ul class="fish_title">
+                                        <li id="fish_name"></li>
+                                        <li id="fish_weight"></li>
+                                        <li id="fish_area"></li>
+                                    </ul>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <!-- 魚的描述 -->
+                                <div class="col-12" style="height: 50%;padding: 10em 5em;">
+                                    <p id="fish_info"></p>
+                                </div>
+                                <!-- 食物 -->
+                                <div class="col-12" style="height: 50%; text-align: center;padding-top: 4rem;">
+                                    <h1 style="padding-bottom:1em ;">食物</h1>
+                                    <figure class="figure">
+                                        <img src="" class="img-fluid figure-img" id="food_image_change">    
+                                    </figure>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                                                
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
     <footer id="footer_head">
         <p style="background-color: transparent;">© This website is only for practice , dont sue me pls :( ©</p>
     </footer>
@@ -178,6 +265,7 @@
 
     
     <script src="./index_js.js"></script>
+    <!-- <script src="./fishes/fish01.js"></script> -->
 
 </body>
 

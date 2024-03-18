@@ -138,36 +138,8 @@ main .video {
 /*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
 /*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
 
-.phone-container{display: none;}
-/* .phone-container{
-    position: absolute; 
-    left: 6rem; 
-    bottom:3rem; 
-    font-size: 60px;
-    background-color: yellow;
-    padding: 16rem 9rem;
-    border-radius: 30px;
-    display: none;
-    box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
-}
-.phone-screen{
-    position: absolute; 
-    left: 0.14em;; 
-    bottom:0.2em; 
-    font-size: 60px;
-    background-color: black;
-    padding: 15.2rem 8.5rem;
-    border-radius: 30px;
-}
+/* .phone-container{display: none;} */
 
-.appbutton{
-    width: 50px;
-    height: 50px;
-    background-color: #ddd;
-    border-radius: 10px;
-    position: absolute;
-    cursor: pointer;
-  } */
 
   .phone-container{
     position: fixed; 
@@ -224,7 +196,7 @@ main .video {
 #youtube_app{top: 60px;left: 245px;}
 #nintendo_app{top: 150px;left: 5px;}
 #discord_app{top: 150px;left: 85px;}
-#no7{top: 150px;left: 165px;}
+#fish_app_01_icon{top: 150px;left: 165px;}
 #no8{top: 150px;left: 245px;}
 #no9{top: 240px;left: 5px;}
 
@@ -235,7 +207,7 @@ main .video {
 #youtube_name{position: absolute; font-size: 16px;font-weight: bold;left: 243px; top: 120px; }
 #nintendo_name{position: absolute; font-size: 16px;font-weight: bold;left: 5px; top: 210px; }
 #discord_name{position: absolute; font-size: 16px;font-weight: bold;left: 85px; top: 210px; }
-#po7{position: absolute; font-size: 16px;font-weight: bold;left: 20px; top: 210px; }
+#fish_app_01_icon_name{position: absolute; font-size: 16px;font-weight: bold;left: 170px; top: 210px; }
 #po8{position: absolute; font-size: 16px;font-weight: bold;left: 20px; top: 210px; }
 #po9{position: absolute; font-size: 16px;font-weight: bold;left: 20px; top: 120px; }
 
@@ -246,6 +218,10 @@ main .video {
 #fixed_st{margin-left: 9px;}
 #fixed_gm{margin-left: 1.6px;}
 #fixed_dc{margin-left: 1.8px;}
+#fixed_fish01{font-size: 45px;margin-left: 4px;color: blue;}
+/* .fa-fish{font-size: 45px;margin-left: 4px;color: blue;} */
+
+
 
 
 .phonetrigger{
@@ -285,29 +261,29 @@ main .video {
 
 .bg-phone-sc-container{
     display: none;
-    /* display: flex; */
+    /* display: flex   ; */
     align-items: end;
     justify-content: center;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgb(128, 128, 128, 0.3);
-    
-
-
 }
 
 .bg-phone{
-    width: 70%;
+    width: 1300px;
     height: 85%;
     background-color: blue;
     position: fixed;
     border-radius: 120px 120px 0 0;
     border: 3px solid rgb(0, 0, 0,0.5);  
     /* display: flex; */
+   
+
 }
 
-#close_trigger{
+
+#close_trigger_2{
     right: 160px;
     bottom:80px;
     position: fixed;
@@ -317,16 +293,24 @@ main .video {
 }
 
 .bg-phone-sc{
-    width: 65%;
-    height: 80%;
+    width: 1200px;
+    height: 100%;
     background-color: lightblue;
-    position: fixed;
-    bottom: 0;
-    left:335px;
+    position: absolute;
+    top: 50px;
+    left:45px;
     border-radius: 120px 120px 0 0;
     border: 3px solid rgb(0, 0, 0,0.5); 
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-y: scroll;
 }
+
+
+/* 滾輪改為0px  >>> 不想顯示 */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
 
 #bg-phone_top_bar{
     width: 100%;
@@ -335,8 +319,110 @@ main .video {
     text-align: center;
     font-size: 65px;
     font-weight: bold;
-    color: rgb(0, 0, 0,0.8);    
+    color: rgb(0, 0, 0,0.8);   border-radius: 120px 120px 0 0; 
 }
+
+
+/* APP 開關ID  APP 開關ID  APP 開關ID  APP 開關ID  APP 開關ID  APP 開關ID  APP 開關ID */
+#fish_app_01{display: none;}
+#fish_app_02{display: none;}
+
+
+
+
+
+
+
+
+
+/* 魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST*/
+/* 魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST*/
+/* 魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST*/
+
+.fish_app_list01,.fish_app_list02,.fish_app_list03{display: block;margin:auto;margin-top: 17.5px;margin-bottom: 100px;}
+.container p{
+    font-size: 25px;
+    text-align: justify;
+}
+
+
+
+/* TRY */
+#close_trigger{
+    right: 0;
+    top: 10%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+
+    display: none;
+}
+/* .darklayer{
+    display: none;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.5s; 
+    z-index: 0  ;
+    flex-direction: row;
+    
+} */
+.fishList{
+    display: none;
+    background-color: blue;
+    position: sticky;
+    height: 800px;
+    width: 1100px;
+    bottom: 110px;    
+    left: 40px;
+    border-radius: 90px;
+    /* padding-top: 2rem;
+    padding-left: 1rem; */
+    /* background-color: transparent; */
+    flex-direction: row;
+}
+
+.fish_title{
+    list-style: none;
+    line-height: 2em;
+    font-size: 35px;
+    letter-spacing: 3px;
+    
+}
+.fish_grids{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+/* .fish_image{
+   min-height: 350px;
+} */
+
+.fish_block{
+    height: 400px;
+}
+
+#fish_info{
+    font-size: 30px ;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
