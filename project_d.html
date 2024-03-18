@@ -49,12 +49,9 @@
                                     關於我們
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" id="dropdown-item-1" href="./about/about_dave.html">關於戴夫</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="./about/about_bancho.html">班喬壽司</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="./about/sponsors.html">贊助我們</a></li>
+                                    <li><a class="dropdown-item"  href="./about/about_dave.html">關於戴夫</a></li>
+                                    <li><a class="dropdown-item"  href="./about/about_bancho.html">班喬壽司</a></li>
+                                    
                                 </ul>
                             </li>
                         </ul>
@@ -70,9 +67,9 @@
                                     魚類圖鑑
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" id="dropdown-item-1" href="./fishes/fishes01.html">淺海區</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="./fishes/fishes02.html">深海區</a></li>  
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="./fishes/fishes03.html">冰原區</a></li>  
+                                    <li><a class="dropdown-item"  href="./fishes/fishes01.html">淺海區</a></li>
+                                    <li><a class="dropdown-item"  href="./fishes/fishes02.html">深海區</a></li>  
+                                    <li><a class="dropdown-item"  href="./fishes/fishes03.html">冰原區</a></li>  
                                 </ul>
                             </li>
                         </ul>
@@ -88,37 +85,18 @@
                                     班喬壽司
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" id="dropdown-item-1" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li class="dropdown-item">米其林</li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    
+                                    <li><a class="dropdown-item"  href="https://guide.michelin.com/tw/zh_TW/restaurants/1-star-michelin/sushi?q=%E6%97%A5%E6%9C%AC" target="_blank"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a class="dropdown-item"  href="https://guide.michelin.com/tw/zh_TW/restaurants/2-stars-michelin/sushi?q=%E6%97%A5%E6%9C%AC" target="_blank"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a class="dropdown-item"  href="https://guide.michelin.com/tw/zh_TW/restaurants/3-stars-michelin/sushi?q=%E6%97%A5%E6%9C%AC" target="_blank"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a></li>
+                                   
                                 </ul>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- bar 4 starts here -->
-                    
-                    <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    待定
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" id="dropdown-item-1" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" id="dropdown-item-2" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
             </nav>
         </div>
@@ -133,45 +111,57 @@
             </div>
 
 
-            <button onclick="phonebutton()" class="phonetrigger" ><i class="fa-solid fa-phone"></i></button>
+            <button onclick="phonebutton()" class="phonetrigger" id="phonetrigger" ><i class="fa-solid fa-phone"id="phonetriggerIcon"></i></button>
+            <button onclick="phonebuttonclose()" class="phonetrigger" id="phonetriggerclose"><i class="fa-solid fa-x"id="phonetriggerCloseIcon"></i></button>
             
             
             <div class="phone-container" id="phone">
                 <div class="phone-screen">
                     <div id="phone_top_bar"></div>
                     
-                    <div class="appbutton" id="no1"><div><i class="fa-solid fa-fish"></i></div></div>
-                    <p id="po1">123</p>
-                    <div class="appbutton" id="twitter_app"><a href="https://twitter.com/DaveDiverGame" target="_blank"><div><i class="fa-brands fa-x-twitter"></i></div></a></div>
+                    <div class="appbutton" id="photo_button"><div id="gallery"><i class="fa-solid fa-image"></i></div></div>
+                    <p id="photo_button_name">相簿</p>
+                    <div class="appbutton" id="twitter_app"><a href="https://twitter.com/DaveDiverGame" target="_blank" id="twitter_color"><div><i class="fa-brands fa-x-twitter"></i></div></a></div>
                     <p id="twitter_name">Twitter</p>
-                    <div class="appbutton" id="steam_app"><a href="https://steamcommunity.com/app/1868140?l=tchinese" target="_blank"><div id="fixed_st"><i class="fa-brands fa-steam"></i></div></a></div>
+                    <div class="appbutton" id="steam_app"><a href="https://steamcommunity.com/app/1868140?l=tchinese" target="_blank" id="steam_color"><div id="fixed_st"><i class="fa-brands fa-steam"></i></div></a></div>
                     <p id="steam_name">Steam</p>
-                    <div class="appbutton" id="youtube_app"><a href="https://www.youtube.com/@mintrocket_official/videos" target="_blank"><div id="fixed_yt"><i class="fa-brands fa-youtube"></i></div></a></div>
+                    <div class="appbutton" id="youtube_app"><a href="https://www.youtube.com/@mintrocket_official/videos" target="_blank" id="yt_color"><div id="fixed_yt"><i class="fa-brands fa-youtube"></i></div></a></div>
                     <p id="youtube_name">Youtube</p>
-                    <div class="appbutton" id="nintendo_app"><a href="https://www.nintendo.com/us/store/products/dave-the-diver-switch/" target="_blank"><div id="fixed_gm"><i class="fa-solid fa-gamepad"></i></div></a></div>
+                    <div class="appbutton" id="nintendo_app"><a href="https://www.nintendo.com/us/store/products/dave-the-diver-switch/" target="_blank" id="gm_color"><div id="fixed_gm"><i class="fa-solid fa-gamepad"></i></div></a></div>
                     <p id="nintendo_name">Website</p>
-                    <div class="appbutton" id="discord_app"><a href="https://discord.com/invite/davethediver" target="_blank"><div id="fixed_dc"><i class="fa-brands fa-discord"></i></div></a></div>
+                    <div class="appbutton" id="discord_app"><a href="https://discord.com/invite/davethediver" target="_blank" id="dc_color"><div id="fixed_dc"><i class="fa-brands fa-discord"></i></div></a></div>
                     <p id="discord_name">Discord</p>
                     <div class="appbutton" id="fish_app_01_icon" ><div  onclick="fish_app_01_trigger()" id="fixed_fish01"><i class="fa-solid fa-fish"></i></div></div>
                     <p id="fish_app_01_icon_name">淺海區</p>
-                    <div class="appbutton" id="no8"><div  onclick="fish_app_02_trigger()" id="fixed_fish02"><i class="fa-solid fa-fish"></i></div></div>
-                    <p id="po8">深海區</p>
-                    <div class="appbutton" id="no9"><div onclick="fish_app_03_trigger()" id="fixed_fish02"><i class="fa-solid fa-fish"></i></div></div>
-                    <p id="po9">冰原區</p>
+                    <div class="appbutton" id="fish_app_02_icon"><div  onclick="fish_app_02_trigger()" id="fixed_fish02"><i class="fa-solid fa-fish"></i></div></div>
+                    <p id="fish_app_02_icon_name">深海區</p>
+                    <div class="appbutton" id="fish_app_03_icon"><div onclick="fish_app_03_trigger()" id="fixed_fish03"><i class="fa-solid fa-fish"></i></div></div>
+                    <p id="fish_app_03_icon_name">冰原區</p>
+                    <div class="appbutton" id="m_Onestar_app"><a href="https://guide.michelin.com/tw/zh_TW/restaurants/1-star-michelin/sushi?q=%E6%97%A5%E6%9C%AC" target="_blank"> <img src="./images/sushi.png" id="onestarSushi"></a></div>
+                    <p id="m_Onestar_app_name">米其林1星</p>
+                    <div class="appbutton" id="m_Twostar_app"><a href="https://guide.michelin.com/tw/zh_TW/restaurants/2-stars-michelin/sushi?q=%E6%97%A5%E6%9C%AC" target="_blank"> <img src="./images/sushi.png" id="twostarSushi"></a></div>
+                    <p id="m_Twostar_app_name">米其林2星</p>
+                    <div class="appbutton" id="m_Threestar_app"><a href="https://guide.michelin.com/tw/zh_TW/restaurants/3-stars-michelin/sushi?q=%E6%97%A5%E6%9C%AC" target="_blank"> <img src="./images/sushi.png" id="threestarSushi"></a></div>
+                    <p id="m_Threestar_app_name">米其林3星</p>
+                       
+                    
                 </div>
             </div>
         <!-- bg screen  bg screen  bg screen  bg screen  bg screen  bg screen  bg screen  bg screen -->
             <div class="bg-phone-sc-container" id="bg-phone-sc">
-                <button id="close_trigger_2" onclick="bg_phone_trigger_shut()"><i class="fa-sharp fa-regular fa-x"></i></button>
+                
 
                 <div class="bg-phone">
+                    
+                    
                     <div class="bg-phone-sc">
                         <!-- 時間bar -->
                         <div id="bg-phone_top_bar"></div>
-
+                        
+                        <button id="close_trigger_2" onclick="bg_phone_trigger_shut()" style="margin-left: auto;display: block;"><i class="fa-sharp fa-regular fa-x"></i></button>
                         <!-- 魚01選單 -->
                         <div class="container" id="fish_app_01" >       <!--style="display: none;" -->
-                            <div class="row" style="margin-top: 100px;" >                            
+                            <div class="row" style="margin-top: 30px;" >                            
                                 <div class="col-6 "><img src="../images/fish/河豚.jpg" id="pufferFish" class="fish_app_list01"></div>
                                 <div class="col-6 "><img src="../images/fish/石斑魚.jpg" id="grouper" class="fish_app_list01"></div>
                                 <div class="col-6 "><img src="../images/fish/鮪魚.jpg" id="oToro" class="fish_app_list01"></div>
@@ -189,7 +179,7 @@
 
                         <!-- 魚02選單 -->   
                         <div class="container" id="fish_app_02">
-                                <div class="row" style="margin-top: 100px;">              
+                                <div class="row" style="margin-top: 30px;">              
                                     <div class="col-6"><img src="../images/fish/青瞻星魚.jpg" id="starFish" class="fish_app_list02"></div>
                                     <div class="col-6"><img src="../images/fish/十指金眼鯛.jpg" id="tenFingers" class="fish_app_list02"></div>
                                     <div class="col-6"><img src="../images/fish/三齒.jpg" id="threeTeeth" class="fish_app_list02"></div>
@@ -200,7 +190,7 @@
                         </div>
                         <!-- 魚03選單 --> 
                         <div class="container" id="fish_app_03" >
-                                <div class="row" style="margin-top: 100px;">              
+                                <div class="row" style="margin-top: 30px;">              
                                     <div class="col-6"><img src="../images/fish/南極獅子魚.jpg" id="lionFish" class="fish_app_list03"></div>
                                     <div class="col-6"><img src="../images/fish/小飛象章魚.jpg" id="elephantOct" class="fish_app_list03"></div>
                                     <div class="col-6"><img src="../images/fish/軟銀棘杜父魚.jpg" id="uglyFish" class="fish_app_list03"></div>
@@ -248,16 +238,16 @@
                                     </figure>
                                     
                                 </div>
-
+                                       
                             </div>
                         </div>
-
+                        
                                                 
                                             
                                         </div>
                                     </div>
                                 </div>
-                            </main>
+        </main>
     <footer id="footer_head">
         <p style="background-color: transparent;">© This website is only for practice , dont sue me pls :( ©</p>
     </footer>

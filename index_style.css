@@ -49,25 +49,9 @@ header {
     padding-right: 30px;
     transition: all 0.2s ease;
 }
+.fa-star{color: gold;}
 
-/* footer {
-    position: fixed;
-    width: 100%;
-    height: 48px;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    color: rgba(255, 255, 255, 0.6);
-    font-family: Teko;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-    line-height: 100%;
-} */
+
 
 footer  {
     position: fixed;
@@ -108,18 +92,12 @@ main .video {
 }
 
 
-.navbar a {
-    color: rgb(255, 208, 45) !important;
-    font-size: 30px !important;
-    font-weight: bolder;
+.nav-link {
+    color: rgb(255, 208, 45) !important;font-size: 30px !important;font-weight: bolder;}
 
-}
+.dropdown-item{color: black !important;font-size: 30px !important; font-weight: bolder;text-align: center;}
 
 
-#dropdown-item-1,
-#dropdown-item-2 {
-    color: black !important;
-}
 
 .logo-diver {
     display: block;
@@ -138,7 +116,7 @@ main .video {
 /*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
 /*  phone css phone css phone css phone css phone css phone css phone css phone css phone css */
 
-/* .phone-container{display: none;} */
+.phone-container{display: none;}
 
 
   .phone-container{
@@ -146,12 +124,12 @@ main .video {
     left: 100px; 
     bottom:70px; 
     font-size: 60px;
-    background-color: rgb(94, 92, 230) ;
+    background-color: rgb(46, 57, 71) ;
     /* padding: 300px 170px; */
-    width: 340px;
+    width: 345px;
     height: 600px;
     border-radius: 30px;
-    /* display: none; */
+
     box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
     border: 3px solid rgb(0, 0, 0,0.5);
 }
@@ -190,36 +168,55 @@ main .video {
     cursor: pointer;
   }
 
-#no1{top: 60px;left: 5px;}
-#twitter_app{top: 60px;left: 85px;}
-#steam_app{top: 60px;left: 165px;}
-#youtube_app{top: 60px;left: 245px;}
-#nintendo_app{top: 150px;left: 5px;}
-#discord_app{top: 150px;left: 85px;}
-#fish_app_01_icon{top: 150px;left: 165px;}
-#no8{top: 150px;left: 245px;}
-#no9{top: 240px;left: 5px;}
+#photo_button{top: 60px;left: 8px;}
+#twitter_app{top: 60px;left: 88px;}
+#steam_app{top: 60px;left: 168px;}
+#youtube_app{top: 60px;left: 248px;}
+#nintendo_app{top: 150px;left: 8px;}
+#discord_app{top: 150px;left: 88px;}
+#fish_app_01_icon{top: 150px;left: 168px;}
+#fish_app_02_icon{top: 150px;left: 248px;}
+#fish_app_03_icon{top: 240px;left: 8px;}
+#m_Onestar_app{top: 240px;left: 88px;background-color:orange;border: 3px solid orange;}
+#m_Twostar_app{top: 240px;left: 168px;background-color:orange;border: 3px solid orange;}
+#m_Threestar_app{top: 240px;left: 248px;background-color:orange;border: 3px solid orange;}
 
 
-#po1{position: absolute; font-size: 16px;font-weight: bold;left: 20px; top: 120px; }
-#twitter_name{position: absolute; font-size: 16px;font-weight: bold;left: 88px; top: 120px; }
-#steam_name{position: absolute; font-size: 16px;font-weight: bold;left: 170px; top: 120px; }
-#youtube_name{position: absolute; font-size: 16px;font-weight: bold;left: 243px; top: 120px; }
+
+
+#onestarSushi,#twostarSushi,#threestarSushi{display: block;width: 55px;}
+
+
+
+#photo_button_name{position: absolute; font-size: 16px;font-weight: bold;left: 20px; top: 120px; }
+#twitter_name{position: absolute; font-size: 16px;font-weight: bold;left: 90px; top: 120px; }
+#steam_name{position: absolute; font-size: 16px;font-weight: bold;left: 173px; top: 120px; }
+#youtube_name{position: absolute; font-size: 16px;font-weight: bold;left: 246px; top: 120px; }
 #nintendo_name{position: absolute; font-size: 16px;font-weight: bold;left: 5px; top: 210px; }
-#discord_name{position: absolute; font-size: 16px;font-weight: bold;left: 85px; top: 210px; }
-#fish_app_01_icon_name{position: absolute; font-size: 16px;font-weight: bold;left: 170px; top: 210px; }
-#po8{position: absolute; font-size: 16px;font-weight: bold;left: 20px; top: 210px; }
-#po9{position: absolute; font-size: 16px;font-weight: bold;left: 20px; top: 120px; }
+#discord_name{position: absolute; font-size: 16px;font-weight: bold;left: 88px; top: 210px; }
+#fish_app_01_icon_name{position: absolute; font-size: 16px;font-weight: bold;left: 173px; top: 210px; }
+#fish_app_02_icon_name{position: absolute; font-size: 16px;font-weight: bold;left: 253px; top: 210px; }
+#fish_app_03_icon_name{position: absolute; font-size: 16px;font-weight: bold;left: 13px; top: 300px; }
+#m_Onestar_app_name{position: absolute; font-size: 16px;font-weight: bold;left: 80px; top: 300px; }
+#m_Twostar_app_name{position: absolute; font-size: 16px;font-weight: bold;left: 160px; top: 300px; }
+#m_Threestar_app_name{position: absolute; font-size: 16px;font-weight: bold;left: 240px; top: 300px; }
 
 .appbutton>a>div{font-size: 45px; margin-top: -3px; margin-left:7px;}
 
+#gallery{font-size: 45px; margin-left: 8px;color: #06c755;}
 
-#fixed_yt{margin-left: 5px;}
+#fixed_yt{margin-left: 4.5px;}
 #fixed_st{margin-left: 9px;}
-#fixed_gm{margin-left: 1.6px;}
-#fixed_dc{margin-left: 1.8px;}
-#fixed_fish01{font-size: 45px;margin-left: 4px;color: blue;}
+#fixed_gm{margin-left: 1.6px;font-size: 45px;}
+#fixed_dc{margin-left: 2.3px;font-size: 43px;margin-top: 1px;}
+#fixed_fish01,#fixed_fish02,#fixed_fish03{font-size: 45px;margin-left: 4.5px;color: rgba(128, 128, 128, 0.719);}
 /* .fa-fish{font-size: 45px;margin-left: 4px;color: blue;} */
+
+#twitter_color{color:  #000000;}
+#steam_color{color: rgb(27, 40, 56);}
+#yt_color{color: #FF0000;}
+#gm_color{color: rgb(96, 192, 252);}
+#dc_color{color: rgb(114, 137, 217);}
 
 
 
@@ -229,18 +226,25 @@ main .video {
     font-size: 80px;
     background-color: transparent;
     border: none;
-    right: 8rem;
-    bottom: 8rem;
+    right: 100px;
+    bottom: 120px;
     color:#4267B2;
     border: 3px solid #4267B2;
-    padding: 0px 20px;
+    padding: 0px 15.5px;
+}
+#phonetriggerclose{
+    color: red;
+    border:3px solid red;
+    padding-left:25px ;
+    padding-right:25px ;
+    right: 100px;
+    bottom: 120px;
+    display: none;
 }
 
 
 
-/* .phone {
-    box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
-} */
+
 
 
 
@@ -273,7 +277,7 @@ main .video {
 .bg-phone{
     width: 1300px;
     height: 85%;
-    background-color: blue;
+    background-color: rgb(46, 57, 71);
     position: fixed;
     border-radius: 120px 120px 0 0;
     border: 3px solid rgb(0, 0, 0,0.5);  
@@ -284,12 +288,19 @@ main .video {
 
 
 #close_trigger_2{
-    right: 160px;
+    /* right: 160px;
     bottom:80px;
-    position: fixed;
-    width: 140px;
-    height: 140px;
-    font-size: 100px;
+    position: absolute; */
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    position: sticky;
+    top: 60px;
+    border-radius: 100%;
+    margin-left: auto;
+    display: block;
+    border: 2px solid black;
+    
 }
 
 .bg-phone-sc{
@@ -330,11 +341,6 @@ main .video {
 
 
 
-
-
-
-
-
 /* 魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST*/
 /* 魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST*/
 /* 魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST  魚0~130M APP LIST*/
@@ -355,29 +361,17 @@ main .video {
     width: 60px;
     height: 60px;
     font-size: 40px;
-
+    border: 2   px solid black;
     display: none;
 }
-/* .darklayer{
-    display: none;
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transition: background-color 0.5s; 
-    z-index: 0  ;
-    flex-direction: row;
-    
-} */
+
 .fishList{
     display: none;
     background-color: blue;
     position: sticky;
     height: 800px;
     width: 1100px;
-    bottom: 110px;    
+    bottom: 0px;    
     left: 40px;
     border-radius: 90px;
     /* padding-top: 2rem;
@@ -389,7 +383,7 @@ main .video {
 .fish_title{
     list-style: none;
     line-height: 2em;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 3px;
     
 }

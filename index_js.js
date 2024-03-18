@@ -1,21 +1,20 @@
 // phone appear button
 var phoneButt = document.getElementById("phone");
+var phoneButtTrigger = document.getElementById("phonetrigger");
+var phoneButtTriggerclose = document.getElementById("phonetriggerclose");
+var phoneFishListClose = document.getElementById("close_trigger_2");
 function phonebutton(){
-    phoneButt.style.display = "flex";   
+    phoneButt.style.display = "flex"; 
+    phoneButtTriggerclose.style.display = "inline-block"; 
+    phoneButtTrigger.style.display = "none"; 
 }
 
-var time_at_bar = new Date();
-var tab_year = time_at_bar.getFullYear();
-var tab_mon = time_at_bar.getMonth()+1;
-var tab_date = time_at_bar.getDate();
-var tab_hours = time_at_bar.getHours();
-var min = time_at_bar.getMinutes();
-var tab_min = min.toString().padStart(2,"0");
-var show_time = tab_year+"年"+tab_mon+"月"+tab_date+"日"+"\u00A0"+tab_hours+":"+tab_min;
+function phonebuttonclose(){
+    phoneButt.style.display = "none"; 
+    phoneButtTriggerclose.style.display = "none" ;
+    phoneButtTrigger.style.display = "inline-block" ;
 
-
-document.getElementById("phone_top_bar").innerHTML = show_time;
-document.getElementById("bg-phone_top_bar").innerHTML = show_time;
+}
 
 // 大螢幕關閉 同時顯示手機
 // 大螢幕關閉 同時顯示手機
@@ -24,6 +23,8 @@ function bg_phone_trigger_shut(){
     document.getElementById("bg-phone-sc").style.display = "none";
     document.getElementById("phone").style.display = "block";
     document.getElementById("footer_head").style.display = "flex";
+    phoneButt.style.display = "flex"; 
+    phoneButtTriggerclose.style.display = "inline-block";
 
 }
 
@@ -42,6 +43,11 @@ function fish_app_01_trigger(){
     bg_phone_equipment.style.display= "flex";
     // document.getElementById("bg-phone-sc").style.display = "flex";
     document.getElementById("footer_head").style.display = "none";
+    phoneButt.style.display = "none"; 
+    phoneButtTriggerclose.style.display = "none" ;
+   
+
+
 }
 function fish_app_02_trigger(){
     fisha_app_01_trigger.style.display= "none";
@@ -50,6 +56,10 @@ function fish_app_02_trigger(){
     bg_phone_equipment.style.display= "flex";
     // document.getElementById("bg-phone-sc").style.display = "flex";
     document.getElementById("footer_head").style.display = "none";
+    phoneButt.style.display = "none"; 
+    phoneButtTriggerclose.style.display = "none" ;
+
+
 }
 function fish_app_03_trigger(){
     fisha_app_01_trigger.style.display= "none";
@@ -58,9 +68,27 @@ function fish_app_03_trigger(){
     bg_phone_equipment.style.display= "flex";
     // document.getElementById("bg-phone-sc").style.display = "flex";
     document.getElementById("footer_head").style.display = "none";
-    console.log("123");
+    phoneButt.style.display = "none"; 
+    phoneButtTriggerclose.style.display = "none" ;
+
+
 }
 
+
+
+// time bar
+var time_at_bar = new Date();
+var tab_year = time_at_bar.getFullYear();
+var tab_mon = time_at_bar.getMonth()+1;
+var tab_date = time_at_bar.getDate();
+var tab_hours = time_at_bar.getHours();
+var min = time_at_bar.getMinutes();
+var tab_min = min.toString().padStart(2,"0");
+var show_time = tab_year+"年"+tab_mon+"月"+tab_date+"日"+"\u00A0"+tab_hours+":"+tab_min;
+
+
+document.getElementById("phone_top_bar").innerHTML = show_time;
+document.getElementById("bg-phone_top_bar").innerHTML = show_time;
 
 // fish app
 
@@ -107,9 +135,10 @@ fishTriggers.forEach(function(fishTriggers){
     fishTriggers.addEventListener('click', function () {
         darklayer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
         darklayer.style.display = "flex";
-        fishlist.style.backgroundColor = 'rgb(245, 245, 220, 0.8)';
+        fishlist.style.backgroundColor = 'rgb(245, 245, 220, 0.9)';
         fishlist.style.display = "flex";
         document.getElementById("close_trigger").style.display = "block"
+        phoneFishListClose.style.display = "none";
     });
 })
 fishTriggers002.forEach(function(fishTriggers002){
@@ -119,6 +148,7 @@ fishTriggers002.forEach(function(fishTriggers002){
         fishlist.style.backgroundColor = 'rgb(245, 245, 220, 0.8)';
         fishlist.style.display = "flex";
         document.getElementById("close_trigger").style.display = "block"
+        phoneFishListClose.style.display = "none";
     });
 })
 fishTriggers003.forEach(function(fishTriggers003){
@@ -128,6 +158,7 @@ fishTriggers003.forEach(function(fishTriggers003){
         fishlist.style.backgroundColor = 'rgb(245, 245, 220, 0.8)';
         fishlist.style.display = "flex";
         document.getElementById("close_trigger").style.display = "block"
+        phoneFishListClose.style.display = "none";
     });
 })
 // 關閉魚選單
@@ -136,6 +167,7 @@ function shut(){
     darklayer.style.display = "none";
     fishlist.style.display = "none";
     document.getElementById("close_trigger").style.display = "none"
+    phoneFishListClose.style.display = "block";
 }
 
 
