@@ -46,8 +46,7 @@ function fish_app_01_trigger(){
     document.getElementById("footer_head").style.display = "none";
     phoneButt.style.display = "none"; 
     phoneButtTriggerclose.style.display = "none" ;
-   
-
+    gallery_app_trigger.style.display = "none" ;
 
 }
 function fish_app_02_trigger(){
@@ -59,6 +58,7 @@ function fish_app_02_trigger(){
     document.getElementById("footer_head").style.display = "none";
     phoneButt.style.display = "none"; 
     phoneButtTriggerclose.style.display = "none" ;
+    gallery_app_trigger.style.display = "none" ;
 
 
 }
@@ -71,6 +71,8 @@ function fish_app_03_trigger(){
     document.getElementById("footer_head").style.display = "none";
     phoneButt.style.display = "none"; 
     phoneButtTriggerclose.style.display = "none" ;
+    gallery_app_trigger.style.display = "none" ;
+
 }
 
 function galleryTigger(){
@@ -230,132 +232,132 @@ function printFishData(event) {
 
 document.getElementById("pufferFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/河豚.jpg";
+    x.src = "./images/fish/河豚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "通體被棘刺和黑色黑斑點覆蓋，魚身呈白色，身長約120公分。雜食性，特徵為敵人出現時，身體會膨脹。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/河豚_食物.jpg";
+    z.src = "./images/food/河豚_食物.jpg";
 });
 
 /////////////////////// 石斑魚  grouper///////////////////////////////////////
 
 document.getElementById("grouper").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/石斑魚.jpg";
-    const y = document.getElementById("fish_info");
+    x.src = "./images/fish/石斑魚.jpg";
+    const y = document.getElementById("fish_info"); 
     y.innerHTML = "魚呈現深紅褐色，上面帶有不規則的黃或銀色斑點，身長約90公分。吻部寬大，下顎突出，棲身於水深不及300公尺的海底暗礁周圍。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/石斑魚_食物.jpg";
+    z.src = "./images/food/石斑魚_食物.jpg";
 });
 
 //////////////////////////////////////鮪魚////////////////////////////////////////////
 
 document.getElementById("oToro").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/鮪魚.jpg";
+    x.src = "./images/fish/鮪魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "黃色的鰭是他的特徵，一年四季都在繁殖，成長至成體大約需要2年的時間。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/鮪魚_食物.jpg";
+    z.src = "./images/food/鮪魚_食物.jpg";
 });
 
 /////////////////////////////////////////鰻魚///////////////////////////////////////////
 
 document.getElementById("moneyFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/鰻魚.jpg";
+    x.src = "./images/fish/鰻魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "錢鰻，魚身無鱗片，外皮厚實且覆蓋滿黏液，身長約1.5公尺。藏身於熱帶和溫帶海域的暗礁或岩石縫隙中生活，下顎結構獨特，一旦咬住敵人就不會鬆口。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/鰻魚_食物.jpg";
+    z.src = "./images/food/鰻魚_食物.jpg";
 });
 
 ///////////////////////////////////////鯖魚///////////////////////////////////////////
 
 document.getElementById("blueFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/鯖魚.jpg";
+    x.src = "./images/fish/鯖魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "吻部長而尖，魚身呈銀白色紡錘型，藍色背部上有黑波浪狀的縱向條紋，身長30~60公尺。棲息於大海水深200公尺左右的冰冷環境。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/鯖魚_食物.jpg";
+    z.src = "./images/food/鯖魚_食物.jpg";
 });
 
 //////////////////////////////////////旗魚///////////////////////////////////////////////
 
 document.getElementById("swordFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/旗魚.jpg";
+    x.src = "./images/fish/旗魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "長得像條紋四鰭旗魚，但被鰭呈現帆狀。能以每小時110公里的速度游動，廣泛棲息在熱帶和溫帶海域。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/旗魚_食物.jpg";
+    z.src = "./images/food/旗魚_食物.jpg";
 });
 
 ////////////////////////歐洲螯龍蝦/////////////////////////////////
 
 document.getElementById("euroLob").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/歐洲螯龍蝦.jpg";
+    x.src = "./images/fish/歐洲螯龍蝦.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "廣泛分布於北大西洋和地中海西部，棲息在水深最深150公尺的螯龍蝦。甲殼主要為藍色，腹部則為黃色或白色。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/歐洲螯龍蝦_食物.jpg";
+    z.src = "./images/food/歐洲螯龍蝦_食物.jpg";
 });
 
 //////////////////////////////////////褐擬鱗魨///////////////////////////////////////////
 
 document.getElementById("yellowFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/黃魚.jpg";
+    x.src = "./images/fish/黃魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "通體成黃色，眼睛周圍有暗斑，牙齒鋒利，體型巨大，身長約75公分。棲息於珊瑚礁或暗礁斜坡面上，以珊瑚或海膽為食。攻擊性強。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/黃魚_食物.jpg";
+    z.src = "./images/food/黃魚_食物.jpg";
 });
 
 ////////////////////////////////////康馬氏加椿//////////////////////////////////////////////
 
 document.getElementById("comeFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/康馬氏.jpg";
+    x.src = "./images/fish/康馬氏.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "背部呈亮籃色，腹部為銀色及藍灰色混雜，側面有垂直斑紋，主要以蝦、由魚和小魚等為食。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/康馬氏_食物.jpg";
+    z.src = "./images/food/康馬氏_食物.jpg";
 });
 
     ////////////////////////////////////長槍烏賊//////////////////////////////////////////////
 
 document.getElementById("gunSquid").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/長槍烏賊.jpg";
+    x.src = "./images/fish/長槍烏賊.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "呈細長錐形的肉食性軟體動物，平時會將腿放在口袋裡，要捕捉食物時再伸出來。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/長槍烏賊_食物.jpg";
+    z.src = "./images/food/長槍烏賊_食物.jpg";
 });
 
 ////////////////////////////////////花班刺鰓鮨///////////////////////////////////
 
 document.getElementById("redFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/花班刺.jpg";
+    x.src = "./images/fish/花班刺.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "魚呈現紅褐色，上面有小籃斑，身長約60公分。主要棲息於溫暖的珊瑚礁地區，藏身於其後，狩獵其他魚類。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/花班刺_食物.jpg";
+    z.src = "./images/food/花班刺_食物.jpg";
 });
 
 ////////////////////////////////////////白虎蝦///////////////////////////////////////////////
 
 document.getElementById("whiteShrimp").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/白虎蝦.jpg";
+    x.src = "./images/fish/白虎蝦.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "以淺黑色身體及長觸角為特徵的蝦子。成體可以生長到10公分以上，主要棲息在墨西哥灣和南大西洋的海岸地帶。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/白虎蝦_食物.jpg";
+    z.src = "./images/food/白虎蝦_食物.jpg";
 });
 
 
@@ -367,65 +369,65 @@ document.getElementById("whiteShrimp").addEventListener('click', function(){
 
 document.getElementById("starFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/青瞻星魚.jpg";
+    x.src = "./images/fish/青瞻星魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "眼睛和吻部都大，頭部變平，魚身越靠近尾部越窄，身長約35公分。隱藏在沙子或泥土中，狩獵蝦、螃蟹和其他魚等。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/青瞻星魚_食物.jpg";
+    z.src = "./images/food/青瞻星魚_食物.jpg";
 });
 
 //////////////////////////////////////十指金眼鯛////////////////////////////////////////////
 
 document.getElementById("tenFingers").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/十指金眼鯛.jpg";
+    x.src = "./images/fish/十指金眼鯛.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "生活在深海岸礁的金眼鯛科魚類。特徵為金色的大眼睛。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/十指金眼鯛_食物.jpg";
+    z.src = "./images/food/十指金眼鯛_食物.jpg";
 });
 /////////////////////////////////三齒魨/////////////////////////////////////////////////
 
 document.getElementById("threeTeeth").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/三齒.jpg";
+    x.src = "./images/fish/三齒.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "魚呈現黃褐色上有黑色斑點，腹部有可以像扇子般開關的大膜。棲息於平均水深100公尺以上的深大陸棚周圍，以海綿或刺胞生物等為食。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/三齒_食物.jpg";
+    z.src = "./images/food/三齒_食物.jpg";
 });
 
 ///////////////////////////////////挪威海螯蝦///////////////////////////////////////
 
 document.getElementById("norwayLobs").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/挪威海螯蝦.jpg";
+    x.src = "./images/fish/挪威海螯蝦.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "特徵是雙螯修長，整體身型都很纖細。對光敏感，因此在黑暗中比較活躍。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/挪威海螯蝦_食物.jpg";
+    z.src = "./images/food/挪威海螯蝦_食物.jpg";
 });
 
 ///////////////////////////////////雪茄達摩鯊///////////////////////////////////////////////
 
 document.getElementById("damoFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/雪茄達摩鯊.jpg";
+    x.src = "./images/fish/雪茄達摩鯊.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "魚身呈褐色長橢圓形，上面有黑色項鍊花紋，牙齒鋒利，會啃食周圍大中型海洋動物的肉塊";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/雪茄達摩鯊_食物.jpg";
+    z.src = "./images/food/雪茄達摩鯊_食物.jpg";
 });
 
 ///////////////////////////////////單棘//////////////////////////////////////////
 
 document.getElementById("singleFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/單棘.jpg";
+    x.src = "./images/fish/單棘.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "魚身大且呈圓形，尾部短而多刺，通體成深褐色，使用鰭爬行，捕食經過附近的生物。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/單棘_食物.jpg";
+    z.src = "./images/food/單棘_食物.jpg";
 });
 
 
@@ -435,53 +437,53 @@ document.getElementById("singleFish").addEventListener('click', function(){
 
 document.getElementById("lionFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/南極獅子魚.jpg";
+    x.src = "./images/fish/南極獅子魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "棲息於南極地區，深度可達300公尺。總是貼在地面一棟是其主要特徵，身上有深色條紋。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/南極獅子魚_食物.jpg";
+    z.src = "./images/food/南極獅子魚_食物.jpg";
 });
 
 /////////////////////////////////////小飛象章魚/////////////////////////////////////////////
 
 document.getElementById("elephantOct").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/小飛象章魚.jpg";
+    x.src = "./images/fish/小飛象章魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "棲息於深冷的大海中，魚鰭模樣像耳朵。因為這樣子和被稱為小飛象的幼象相似，故被稱為小飛象章魚。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/小飛象章魚_食物.jpg";
+    z.src = "./images/food/小飛象章魚_食物.jpg";
 });
 
 /////////////////////////////////軟銀棘杜父魚/////////////////////////////////////////
 
 document.getElementById("uglyFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/軟銀棘杜父魚.jpg";
+    x.src = "./images/fish/軟銀棘杜父魚.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "幾乎沒有肌肉，以果凍一樣的身體減少密度、維持浮力。曾經被選為世界上最醜的動物第一名。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/軟銀棘杜父魚_食物.jpg";
+    z.src = "./images/food/軟銀棘杜父魚_食物.jpg";
 });
 
 /////////////////////////////////金色帝王蟹/////////////////////////////////////////////////
 
 document.getElementById("kingCrab").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/金色帝王蟹.jpg";
+    x.src = "./images/fish/金色帝王蟹.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "主要分布於阿拉斯加等寒冷的海域之中，特徵是主要由鈣組成的金色外殼和背上的刺。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/金色帝王蟹_食物.jpg";
+    z.src = "./images/food/金色帝王蟹_食物.jpg";
 });
 
 ////////////////////////////////////黑線鱈/////////////////////////////////////////
 
 document.getElementById("snowFish").addEventListener('click', function(){
     const x = document.getElementById("fish_image_change");
-    x.src = "../images/fish/黑線鱈.jpg";
+    x.src = "./images/fish/黑線鱈.jpg";
     const y = document.getElementById("fish_info");
     y.innerHTML = "以美麗的外貌而聞名，腹部雪白，背呈現紫紅色，側面為銀灰色。";
     const z = document.getElementById("food_image_change");
-    z.src = "../images/food/黑線鱈_食物.jpg";
+    z.src = "./images/food/黑線鱈_食物.jpg";
 });

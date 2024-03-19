@@ -72,8 +72,7 @@ function printFishData(event) {
     const fishdata = fishes[fishid];
     document.getElementById("fish_name").innerHTML = "名稱&nbsp;:&nbsp;"+fishdata[0];
     document.getElementById("fish_weight").innerHTML = "體重&nbsp;:&nbsp;"+fishdata[1];
-    document.getElementById("fish_area").innerHTML = "出沒地&nbsp;:&nbsp;"+fishdata[2];
-    
+    document.getElementById("fish_area").innerHTML = "出沒地&nbsp;:&nbsp;"+fishdata[2];  
 }
 
 ///////////////////////////////////南極獅子魚////////////////////////////////////////////
