@@ -119,7 +119,7 @@
                 <div class="phone-screen">
                     <div id="phone_top_bar"></div>
                     
-                    <div class="appbutton" id="photo_button"><div id="gallery"><i class="fa-solid fa-image"></i></div></div>
+                    <div class="appbutton" id="photo_button"><div onclick="galleryTigger()" id="gallery"><i class="fa-solid fa-image"></i></div></div>
                     <p id="photo_button_name">相簿</p>
                     <div class="appbutton" id="twitter_app"><a href="https://twitter.com/DaveDiverGame" target="_blank" id="twitter_color"><div><i class="fa-brands fa-x-twitter"></i></div></a></div>
                     <p id="twitter_name">Twitter</p>
@@ -159,6 +159,19 @@
                         <div id="bg-phone_top_bar"></div>
                         
                         <button id="close_trigger_2" onclick="bg_phone_trigger_shut()" style="margin-left: auto;display: block;"><i class="fa-sharp fa-regular fa-x"></i></button>
+                        <!-- gallery -->
+                        <div class="container" id="gallery_app">
+                            <div class="row" style="padding-top: 30px;">              
+                                <div class="col-6" style="height: 500px; "><img src="images/Dtd_epilogue_friends.webp" class="test1"></div>
+                                <div class="col-6" style="height: 500px;"><img src="images/DAVE GALLERY.jpg" class="test1"></div>
+                                <div class="col-6" style="height: 500px;"><img src="./images/Bancho_Sushi2.webp" class="test1"></div>
+                                <div class="col-6" style="height: 500px;"><img src="./images/Bancho_Sushi.webp" class="test1"></div>
+                                <div class="col-6" style="height: 500px;"><img src="images/DAVE TALK.jpg" class="test1"></div>
+                                <div class="col-6" style="height: 500px;"><img src="images/FRIENDS.webp" class="test1"></div>
+                                <div class="col-6" style="height: 500px;"><img src="images/BANCHO 11.jpg" class="test1"></div>
+                                <div class="col-6" style="height: 500px;"><img src="images/JUDGE.avif" class="test1"></div>
+                            </div>                            
+                    </div>
                         <!-- 魚01選單 -->
                         <div class="container" id="fish_app_01" >       <!--style="display: none;" -->
                             <div class="row" style="margin-top: 30px;" >                            
@@ -201,7 +214,6 @@
 
                          <!-- 暗層 -->
                         <div class="darklayer" id="darklayer">
-                            <!-- <button id="close_trigger" onclick="shut()"><i class="fa-sharp fa-regular fa-x"></i></button> -->
                         </div>
 
                         <!-- 魚的清單 浮動 -->

@@ -34,6 +34,7 @@ function bg_phone_trigger_shut(){
 var fisha_app_01_trigger = document.getElementById("fish_app_01");
 var fisha_app_02_trigger = document.getElementById("fish_app_02");
 var fisha_app_03_trigger = document.getElementById("fish_app_03");
+var gallery_app_trigger = document.getElementById("gallery_app");
 var bg_phone_equipment = document.getElementById("bg-phone-sc");
 
 function fish_app_01_trigger(){
@@ -70,11 +71,19 @@ function fish_app_03_trigger(){
     document.getElementById("footer_head").style.display = "none";
     phoneButt.style.display = "none"; 
     phoneButtTriggerclose.style.display = "none" ;
-
-
 }
 
-
+function galleryTigger(){
+    fisha_app_01_trigger.style.display= "none";
+    fisha_app_02_trigger.style.display= "none";
+    fisha_app_03_trigger.style.display= "none";
+    bg_phone_equipment.style.display= "flex";
+    document.getElementById("footer_head").style.display = "none";
+    phoneButt.style.display = "none"; 
+    phoneButtTriggerclose.style.display = "none" ;
+    gallery_app_trigger.style.display = "block" ;
+    console.log("123");
+}
 
 // time bar
 var time_at_bar = new Date();
