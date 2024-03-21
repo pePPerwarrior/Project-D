@@ -1,0 +1,32 @@
+@keyframes enter {
+    from {bottom: -1500px;}
+    to {bottom:70px;}
+  }
+
+@keyframes leave {
+from {bottom: 70px;}
+to {bottom:-1500px;}
+}
+
+@keyframes enter02 {
+    from {bottom: -1500px;}
+    to {bottom:0;}
+  }
+
+@keyframes leave02 {
+from {bottom: 0;}
+to {bottom:-1500px;}
+}
+
+#phone {
+    animation: enter;
+    animation-duration: 0.8s;
+
+}
+
+
+#bg-phone-sc {
+    animation: enter02;
+    animation-duration: 0.8s;
+
+}

@@ -3,28 +3,44 @@ var phoneButt = document.getElementById("phone");
 var phoneButtTrigger = document.getElementById("phonetrigger");
 var phoneButtTriggerclose = document.getElementById("phonetriggerclose");
 var phoneFishListClose = document.getElementById("close_trigger_2");
-function phonebutton(){
-    phoneButt.style.display = "flex"; 
-    phoneButtTriggerclose.style.display = "inline-block"; 
-    phoneButtTrigger.style.display = "none"; 
+var phoneSc = document.getElementById("bg-phone-sc");
+
+function phonebutton() {
+    phoneButt.style.display = "flex";
+    phoneButtTriggerclose.style.display = "inline-block";
+    phoneButtTrigger.style.display = "none";
+    phoneButt.style.animation = "enter";
+    phoneButt.style.animationDuration = "0.8s";
+    phoneButt.style.bottom = "70px";
 }
 
-function phonebuttonclose(){
-    phoneButt.style.display = "none"; 
-    phoneButtTriggerclose.style.display = "none" ;
-    phoneButtTrigger.style.display = "inline-block" ;
+function phonebuttonclose() {
+
+    // phoneButt.style.display = "none"; 
+    phoneButtTriggerclose.style.display = "none";
+    phoneButtTrigger.style.display = "inline-block";
+    phoneButt.style.animation = "leave";
+    phoneButt.style.animationDuration = "0.8s";
+    phoneButt.style.bottom = "-1500px";
+
+}
+
+function phoneChange() {
 
 }
 
 // 大螢幕關閉 同時顯示手機
 // 大螢幕關閉 同時顯示手機
 // 大螢幕關閉 同時顯示手機
-function bg_phone_trigger_shut(){
-    document.getElementById("bg-phone-sc").style.display = "none";
+function bg_phone_trigger_shut() {
+    // document.getElementById("bg-phone-sc").style.display = "none";
     document.getElementById("phone").style.display = "block";
     document.getElementById("footer_head").style.display = "flex";
-    phoneButt.style.display = "flex"; 
+    phoneButt.style.display = "flex";
     phoneButtTriggerclose.style.display = "inline-block";
+    phoneSc.style.animation = "leave02";
+    phoneSc.style.animationDuration = "0.8s";
+    phoneSc.style.bottom = "-1500px";
 
 }
 
@@ -37,69 +53,87 @@ var fisha_app_03_trigger = document.getElementById("fish_app_03");
 var gallery_app_trigger = document.getElementById("gallery_app");
 var bg_phone_equipment = document.getElementById("bg-phone-sc");
 
-function fish_app_01_trigger(){
-    fisha_app_01_trigger.style.display= "block";
-    fisha_app_02_trigger.style.display= "none";
-    fisha_app_03_trigger.style.display= "none";
-    bg_phone_equipment.style.display= "flex";
+function fish_app_01_trigger() {
+    fisha_app_01_trigger.style.display = "block";
+    fisha_app_02_trigger.style.display = "none";
+    fisha_app_03_trigger.style.display = "none";
+    bg_phone_equipment.style.display = "flex";
     // document.getElementById("bg-phone-sc").style.display = "flex";
     document.getElementById("footer_head").style.display = "none";
-    phoneButt.style.display = "none"; 
-    phoneButtTriggerclose.style.display = "none" ;
-    gallery_app_trigger.style.display = "none" ;
-
-}
-function fish_app_02_trigger(){
-    fisha_app_01_trigger.style.display= "none";
-    fisha_app_02_trigger.style.display= "block";
-    fisha_app_03_trigger.style.display= "none";
-    bg_phone_equipment.style.display= "flex";
-    // document.getElementById("bg-phone-sc").style.display = "flex";
-    document.getElementById("footer_head").style.display = "none";
-    phoneButt.style.display = "none"; 
-    phoneButtTriggerclose.style.display = "none" ;
-    gallery_app_trigger.style.display = "none" ;
+    phoneButt.style.display = "none";
+    phoneButtTriggerclose.style.display = "none";
+    gallery_app_trigger.style.display = "none";
+    bg_phone_equipment.style.animation = "enter02";
+    bg_phone_equipment.style.animationDuration = "0.8s";
+    bg_phone_equipment.style.bottom = "0";
 
 
 }
-function fish_app_03_trigger(){
-    fisha_app_01_trigger.style.display= "none";
-    fisha_app_02_trigger.style.display= "none";
-    fisha_app_03_trigger.style.display= "block";
-    bg_phone_equipment.style.display= "flex";
+function fish_app_02_trigger() {
+    fisha_app_01_trigger.style.display = "none";
+    fisha_app_02_trigger.style.display = "block";
+    fisha_app_03_trigger.style.display = "none";
+    bg_phone_equipment.style.display = "flex";
     // document.getElementById("bg-phone-sc").style.display = "flex";
     document.getElementById("footer_head").style.display = "none";
-    phoneButt.style.display = "none"; 
-    phoneButtTriggerclose.style.display = "none" ;
-    gallery_app_trigger.style.display = "none" ;
+    phoneButt.style.display = "none";
+    phoneButtTriggerclose.style.display = "none";
+    gallery_app_trigger.style.display = "none";
+    bg_phone_equipment.style.animation = "enter02";
+    bg_phone_equipment.style.animationDuration = "0.8s";
+    bg_phone_equipment.style.bottom = "0";
+
+
+}
+function fish_app_03_trigger() {
+    fisha_app_01_trigger.style.display = "none";
+    fisha_app_02_trigger.style.display = "none";
+    fisha_app_03_trigger.style.display = "block";
+    bg_phone_equipment.style.display = "flex";
+    // document.getElementById("bg-phone-sc").style.display = "flex";
+    document.getElementById("footer_head").style.display = "none";
+    phoneButt.style.display = "none";
+    phoneButtTriggerclose.style.display = "none";
+    gallery_app_trigger.style.display = "none";
+    bg_phone_equipment.style.animation = "enter02";
+    bg_phone_equipment.style.animationDuration = "0.8s";
+    bg_phone_equipment.style.bottom = "0";
 
 }
 
-function galleryTigger(){
-    fisha_app_01_trigger.style.display= "none";
-    fisha_app_02_trigger.style.display= "none";
-    fisha_app_03_trigger.style.display= "none";
-    bg_phone_equipment.style.display= "flex";
+function galleryTigger() {
+    fisha_app_01_trigger.style.display = "none";
+    fisha_app_02_trigger.style.display = "none";
+    fisha_app_03_trigger.style.display = "none";
+    bg_phone_equipment.style.display = "flex";
     document.getElementById("footer_head").style.display = "none";
-    phoneButt.style.display = "none"; 
-    phoneButtTriggerclose.style.display = "none" ;
-    gallery_app_trigger.style.display = "block" ;
-    console.log("123");
+    phoneButt.style.display = "none";
+    phoneButtTriggerclose.style.display = "none";
+    gallery_app_trigger.style.display = "block";
+    bg_phone_equipment.style.animation = "enter02";
+    bg_phone_equipment.style.animationDuration = "0.8s";
+    bg_phone_equipment.style.bottom = "0";
 }
 
 // time bar
-var time_at_bar = new Date();
-var tab_year = time_at_bar.getFullYear();
-var tab_mon = time_at_bar.getMonth()+1;
-var tab_date = time_at_bar.getDate();
-var tab_hours = time_at_bar.getHours();
-var min = time_at_bar.getMinutes();
-var tab_min = min.toString().padStart(2,"0");
-var show_time = tab_year+"年"+tab_mon+"月"+tab_date+"日"+"\u00A0"+tab_hours+":"+tab_min;
 
+function timeShowing() {
+    var time_at_bar = new Date();
+    var tab_year = time_at_bar.getFullYear();
+    var tab_mon = time_at_bar.getMonth() + 1;
+    var tab_date = time_at_bar.getDate();
+    var tab_hours = time_at_bar.getHours();
+    var min = time_at_bar.getMinutes();
+    var tab_min = min.toString().padStart(2, "0");
+    var sec = time_at_bar.getSeconds();
+    var tab_sec = sec.toString().padStart(2, "0");
+    var show_time = tab_year + "年" + tab_mon + "月" + tab_date + "日" + "\u00A0" + tab_hours + ":" + tab_min + ":" + tab_sec;
+    document.getElementById("phone_top_bar").innerHTML = show_time;
+    document.getElementById("bg-phone_top_bar").innerHTML = show_time;
+   
 
-document.getElementById("phone_top_bar").innerHTML = show_time;
-document.getElementById("bg-phone_top_bar").innerHTML = show_time;
+}
+setInterval(timeShowing, 1000);
 
 // fish app
 
@@ -107,28 +141,28 @@ var fishes = {
     grouper: ["石斑魚", "8KG", "50~130m"],
     pufferFish: ["河豚", "3KG", "0~50m"],
     oToro: ["鮪魚", "6KG", "0~130m"],
-    tenFingers:["十指金眼鯛","3KG","130~250m"],
-    threeTeeth:["三齒魨","5KG","130~250m"],
-    elephantOct:["小飛象張魚","4KG","冰河區域"],
-    whiteShrimp:["白虎蝦","0.1KG","0~130m"],
-    squid:["花枝","4KG","50~130m"],
-    redFish:["花斑刺鰓鮨","3KG","50~130m"],
-    kingCrab:["金色帝王蟹","8KG","冰河區域"],
-    gunSquid:["長槍烏賊","4.6KG","50~130m"],
-    starFish:["青瞻星魚","5KG","130~250m"],
-    lionFish:["南極獅子魚","2KG","冰河區域"],
-    norwayLobs:["挪威海螯蝦","0.2KG","130~250m"],
-    comeFish:["康馬氏加椿","8KG","50~130m"],
-    uglyFish:["軟隱棘杜父魚","7.5KG","冰河區域"],
-    damoFish:["雪茄達摩鯊","5KG","130~250m"],
-    singleFish:["單棘躄魚","5KG","130~250m"],
-    shortLion:["短吻獅子魚","5KG","130~250m"],
-    yellowFish:["褐擬鱗魨","3.8KG","0~50m"],
-    snowFish:["黑線鱈","6KG","冰河區域"],
-    swordFish:["平鰭旗魚","9KG","50~130m"],
-    euroLob:["歐洲螯龍蝦","1KG","0~50m"],
-    blueFish:["大西洋鯖魚","3.5KG","50~130m"],
-    moneyFish:["錢鰻","9KG","0~50m"]
+    tenFingers: ["十指金眼鯛", "3KG", "130~250m"],
+    threeTeeth: ["三齒魨", "5KG", "130~250m"],
+    elephantOct: ["小飛象張魚", "4KG", "冰河區域"],
+    whiteShrimp: ["白虎蝦", "0.1KG", "0~130m"],
+    squid: ["花枝", "4KG", "50~130m"],
+    redFish: ["花斑刺鰓鮨", "3KG", "50~130m"],
+    kingCrab: ["金色帝王蟹", "8KG", "冰河區域"],
+    gunSquid: ["長槍烏賊", "4.6KG", "50~130m"],
+    starFish: ["青瞻星魚", "5KG", "130~250m"],
+    lionFish: ["南極獅子魚", "2KG", "冰河區域"],
+    norwayLobs: ["挪威海螯蝦", "0.2KG", "130~250m"],
+    comeFish: ["康馬氏加椿", "8KG", "50~130m"],
+    uglyFish: ["軟隱棘杜父魚", "7.5KG", "冰河區域"],
+    damoFish: ["雪茄達摩鯊", "5KG", "130~250m"],
+    singleFish: ["單棘躄魚", "5KG", "130~250m"],
+    shortLion: ["短吻獅子魚", "5KG", "130~250m"],
+    yellowFish: ["褐擬鱗魨", "3.8KG", "0~50m"],
+    snowFish: ["黑線鱈", "6KG", "冰河區域"],
+    swordFish: ["平鰭旗魚", "9KG", "50~130m"],
+    euroLob: ["歐洲螯龍蝦", "1KG", "0~50m"],
+    blueFish: ["大西洋鯖魚", "3.5KG", "50~130m"],
+    moneyFish: ["錢鰻", "9KG", "0~50m"]
 
 }
 const darklayer = document.querySelector('.darklayer');
@@ -142,7 +176,7 @@ const fishTriggers = document.querySelectorAll('.fish_app_list01');
 const fishTriggers002 = document.querySelectorAll('.fish_app_list02');
 const fishTriggers003 = document.querySelectorAll('.fish_app_list03');
 
-fishTriggers.forEach(function(fishTriggers){
+fishTriggers.forEach(function (fishTriggers) {
     fishTriggers.addEventListener('click', function () {
         darklayer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
         darklayer.style.display = "flex";
@@ -152,7 +186,7 @@ fishTriggers.forEach(function(fishTriggers){
         phoneFishListClose.style.display = "none";
     });
 })
-fishTriggers002.forEach(function(fishTriggers002){
+fishTriggers002.forEach(function (fishTriggers002) {
     fishTriggers002.addEventListener('click', function () {
         darklayer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
         darklayer.style.display = "flex";
@@ -162,7 +196,7 @@ fishTriggers002.forEach(function(fishTriggers002){
         phoneFishListClose.style.display = "none";
     });
 })
-fishTriggers003.forEach(function(fishTriggers003){
+fishTriggers003.forEach(function (fishTriggers003) {
     fishTriggers003.addEventListener('click', function () {
         darklayer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
         darklayer.style.display = "flex";
@@ -173,7 +207,7 @@ fishTriggers003.forEach(function(fishTriggers003){
     });
 })
 // 關閉魚選單
-function shut(){
+function shut() {
     // location.reload();
     darklayer.style.display = "none";
     fishlist.style.display = "none";
@@ -186,7 +220,7 @@ function shut(){
 document.getElementById("pufferFish").addEventListener('click', printFishData);
 document.getElementById("whiteShrimp").addEventListener('click', printFishData);
 document.getElementById("grouper").addEventListener('click', printFishData);
-document.getElementById("oToro").addEventListener('click', printFishData);  
+document.getElementById("oToro").addEventListener('click', printFishData);
 document.getElementById("moneyFish").addEventListener('click', printFishData);
 document.getElementById("blueFish").addEventListener('click', printFishData);
 document.getElementById("swordFish").addEventListener('click', printFishData);
@@ -213,15 +247,15 @@ document.getElementById("kingCrab").addEventListener('click', printFishData);
 document.getElementById("elephantOct").addEventListener('click', printFishData);
 
 
-function test(){console.log("333");}
+function test() { console.log("333"); }
 
 function printFishData(event) {
     const fishid = event.target.id;
     const fishdata = fishes[fishid];
-    document.getElementById("fish_name").innerHTML = "名稱&nbsp;:&nbsp;"+fishdata[0];
-    document.getElementById("fish_weight").innerHTML = "體重&nbsp;:&nbsp;"+fishdata[1];
-    document.getElementById("fish_area").innerHTML = "出沒地&nbsp;:&nbsp;"+fishdata[2];
-    
+    document.getElementById("fish_name").innerHTML = "名稱&nbsp;:&nbsp;" + fishdata[0];
+    document.getElementById("fish_weight").innerHTML = "體重&nbsp;:&nbsp;" + fishdata[1];
+    document.getElementById("fish_area").innerHTML = "出沒地&nbsp;:&nbsp;" + fishdata[2];
+
 }
 
 // 淺海魚   淺海魚    淺海魚    淺海魚    淺海魚   淺海魚   淺海魚
@@ -230,7 +264,7 @@ function printFishData(event) {
 // 淺海魚   淺海魚    淺海魚    淺海魚    淺海魚   淺海魚   淺海魚
 
 
-document.getElementById("pufferFish").addEventListener('click', function(){
+document.getElementById("pufferFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/河豚.jpg";
     const y = document.getElementById("fish_info");
@@ -241,10 +275,10 @@ document.getElementById("pufferFish").addEventListener('click', function(){
 
 /////////////////////// 石斑魚  grouper///////////////////////////////////////
 
-document.getElementById("grouper").addEventListener('click', function(){
+document.getElementById("grouper").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/石斑魚.jpg";
-    const y = document.getElementById("fish_info"); 
+    const y = document.getElementById("fish_info");
     y.innerHTML = "魚呈現深紅褐色，上面帶有不規則的黃或銀色斑點，身長約90公分。吻部寬大，下顎突出，棲身於水深不及300公尺的海底暗礁周圍。";
     const z = document.getElementById("food_image_change");
     z.src = "./images/food/石斑魚_食物.jpg";
@@ -252,7 +286,7 @@ document.getElementById("grouper").addEventListener('click', function(){
 
 //////////////////////////////////////鮪魚////////////////////////////////////////////
 
-document.getElementById("oToro").addEventListener('click', function(){
+document.getElementById("oToro").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/鮪魚.jpg";
     const y = document.getElementById("fish_info");
@@ -263,7 +297,7 @@ document.getElementById("oToro").addEventListener('click', function(){
 
 /////////////////////////////////////////鰻魚///////////////////////////////////////////
 
-document.getElementById("moneyFish").addEventListener('click', function(){
+document.getElementById("moneyFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/鰻魚.jpg";
     const y = document.getElementById("fish_info");
@@ -274,7 +308,7 @@ document.getElementById("moneyFish").addEventListener('click', function(){
 
 ///////////////////////////////////////鯖魚///////////////////////////////////////////
 
-document.getElementById("blueFish").addEventListener('click', function(){
+document.getElementById("blueFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/鯖魚.jpg";
     const y = document.getElementById("fish_info");
@@ -285,7 +319,7 @@ document.getElementById("blueFish").addEventListener('click', function(){
 
 //////////////////////////////////////旗魚///////////////////////////////////////////////
 
-document.getElementById("swordFish").addEventListener('click', function(){
+document.getElementById("swordFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/旗魚.jpg";
     const y = document.getElementById("fish_info");
@@ -296,7 +330,7 @@ document.getElementById("swordFish").addEventListener('click', function(){
 
 ////////////////////////歐洲螯龍蝦/////////////////////////////////
 
-document.getElementById("euroLob").addEventListener('click', function(){
+document.getElementById("euroLob").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/歐洲螯龍蝦.jpg";
     const y = document.getElementById("fish_info");
@@ -307,7 +341,7 @@ document.getElementById("euroLob").addEventListener('click', function(){
 
 //////////////////////////////////////褐擬鱗魨///////////////////////////////////////////
 
-document.getElementById("yellowFish").addEventListener('click', function(){
+document.getElementById("yellowFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/黃魚.jpg";
     const y = document.getElementById("fish_info");
@@ -318,7 +352,7 @@ document.getElementById("yellowFish").addEventListener('click', function(){
 
 ////////////////////////////////////康馬氏加椿//////////////////////////////////////////////
 
-document.getElementById("comeFish").addEventListener('click', function(){
+document.getElementById("comeFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/康馬氏.jpg";
     const y = document.getElementById("fish_info");
@@ -327,9 +361,9 @@ document.getElementById("comeFish").addEventListener('click', function(){
     z.src = "./images/food/康馬氏_食物.jpg";
 });
 
-    ////////////////////////////////////長槍烏賊//////////////////////////////////////////////
+////////////////////////////////////長槍烏賊//////////////////////////////////////////////
 
-document.getElementById("gunSquid").addEventListener('click', function(){
+document.getElementById("gunSquid").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/長槍烏賊.jpg";
     const y = document.getElementById("fish_info");
@@ -340,7 +374,7 @@ document.getElementById("gunSquid").addEventListener('click', function(){
 
 ////////////////////////////////////花班刺鰓鮨///////////////////////////////////
 
-document.getElementById("redFish").addEventListener('click', function(){
+document.getElementById("redFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/花班刺.jpg";
     const y = document.getElementById("fish_info");
@@ -351,7 +385,7 @@ document.getElementById("redFish").addEventListener('click', function(){
 
 ////////////////////////////////////////白虎蝦///////////////////////////////////////////////
 
-document.getElementById("whiteShrimp").addEventListener('click', function(){
+document.getElementById("whiteShrimp").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/白虎蝦.jpg";
     const y = document.getElementById("fish_info");
@@ -362,12 +396,12 @@ document.getElementById("whiteShrimp").addEventListener('click', function(){
 
 
 
- 
+
 // 深海魚 深海魚 深海魚 深海魚 深海魚 深海魚 深海魚 深海魚 深海魚 深海魚 深海魚 深海魚 
 
 ////////////////////////////////////青瞻星魚///////////////////////////////////////////
 
-document.getElementById("starFish").addEventListener('click', function(){
+document.getElementById("starFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/青瞻星魚.jpg";
     const y = document.getElementById("fish_info");
@@ -378,7 +412,7 @@ document.getElementById("starFish").addEventListener('click', function(){
 
 //////////////////////////////////////十指金眼鯛////////////////////////////////////////////
 
-document.getElementById("tenFingers").addEventListener('click', function(){
+document.getElementById("tenFingers").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/十指金眼鯛.jpg";
     const y = document.getElementById("fish_info");
@@ -388,7 +422,7 @@ document.getElementById("tenFingers").addEventListener('click', function(){
 });
 /////////////////////////////////三齒魨/////////////////////////////////////////////////
 
-document.getElementById("threeTeeth").addEventListener('click', function(){
+document.getElementById("threeTeeth").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/三齒.jpg";
     const y = document.getElementById("fish_info");
@@ -399,7 +433,7 @@ document.getElementById("threeTeeth").addEventListener('click', function(){
 
 ///////////////////////////////////挪威海螯蝦///////////////////////////////////////
 
-document.getElementById("norwayLobs").addEventListener('click', function(){
+document.getElementById("norwayLobs").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/挪威海螯蝦.jpg";
     const y = document.getElementById("fish_info");
@@ -410,7 +444,7 @@ document.getElementById("norwayLobs").addEventListener('click', function(){
 
 ///////////////////////////////////雪茄達摩鯊///////////////////////////////////////////////
 
-document.getElementById("damoFish").addEventListener('click', function(){
+document.getElementById("damoFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/雪茄達摩鯊.jpg";
     const y = document.getElementById("fish_info");
@@ -421,7 +455,7 @@ document.getElementById("damoFish").addEventListener('click', function(){
 
 ///////////////////////////////////單棘//////////////////////////////////////////
 
-document.getElementById("singleFish").addEventListener('click', function(){
+document.getElementById("singleFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/單棘.jpg";
     const y = document.getElementById("fish_info");
@@ -435,7 +469,7 @@ document.getElementById("singleFish").addEventListener('click', function(){
 //  冰原區  冰原區  冰原區  冰原區  冰原區  冰原區  冰原區  冰原區  冰原區  冰原區  冰原區 冰原區 
 ///////////////////////////////////南極獅子魚////////////////////////////////////////////
 
-document.getElementById("lionFish").addEventListener('click', function(){
+document.getElementById("lionFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/南極獅子魚.jpg";
     const y = document.getElementById("fish_info");
@@ -446,7 +480,7 @@ document.getElementById("lionFish").addEventListener('click', function(){
 
 /////////////////////////////////////小飛象章魚/////////////////////////////////////////////
 
-document.getElementById("elephantOct").addEventListener('click', function(){
+document.getElementById("elephantOct").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/小飛象章魚.jpg";
     const y = document.getElementById("fish_info");
@@ -457,7 +491,7 @@ document.getElementById("elephantOct").addEventListener('click', function(){
 
 /////////////////////////////////軟銀棘杜父魚/////////////////////////////////////////
 
-document.getElementById("uglyFish").addEventListener('click', function(){
+document.getElementById("uglyFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/軟銀棘杜父魚.jpg";
     const y = document.getElementById("fish_info");
@@ -468,7 +502,7 @@ document.getElementById("uglyFish").addEventListener('click', function(){
 
 /////////////////////////////////金色帝王蟹/////////////////////////////////////////////////
 
-document.getElementById("kingCrab").addEventListener('click', function(){
+document.getElementById("kingCrab").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/金色帝王蟹.jpg";
     const y = document.getElementById("fish_info");
@@ -479,7 +513,7 @@ document.getElementById("kingCrab").addEventListener('click', function(){
 
 ////////////////////////////////////黑線鱈/////////////////////////////////////////
 
-document.getElementById("snowFish").addEventListener('click', function(){
+document.getElementById("snowFish").addEventListener('click', function () {
     const x = document.getElementById("fish_image_change");
     x.src = "./images/fish/黑線鱈.jpg";
     const y = document.getElementById("fish_info");
